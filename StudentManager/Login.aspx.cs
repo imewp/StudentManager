@@ -30,7 +30,7 @@ namespace StudentManager
                 {
                     Session["adminID"] = name;
                     Session["TrueName"] = trueName;
-                    Response.Redirect("Home.aspx");
+                    Response.Redirect("Test.aspx");
                 }
                 else
                 {

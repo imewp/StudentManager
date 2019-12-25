@@ -173,7 +173,7 @@
                     <!-- Tasks end-->
                     
                     <!-- Log out -->
-                    <div class="list-inline-item logout"><a id="logout" href="login.html" class="nav-link"><span class="d-none d-sm-inline">退出登录 </span><i class="icon-logout"></i></a></div>
+                    <div class="list-inline-item logout"><a id="logout" href="Login.aspx" class="nav-link"><span class="d-none d-sm-inline">退出登录 </span><i class="icon-logout"></i></a></div>
                 </div>
             </div>
         </nav>
@@ -185,21 +185,23 @@
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
                 <div class="avatar">
-                    <img src="img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle" /></div>
+                    <img src="img/avatar-admin.jpg" alt="..." class="img-fluid rounded-circle" /></div>
                 <div class="title">
-                    <h1 class="h5">Mark Stephen</h1>
-                    <p>Web Designer</p>
+                    <h1 class="h5">
+                        <asp:Label ID="lblname" runat="server" Text=""></asp:Label>
+                    </h1>
+                    <p>管理员</p>
                 </div>
             </div>
             <!-- Sidebar Navidation Menus-->
             <span class="heading">Main</span>
             <ul class="list-unstyled">
-                <li><a href="index.html"><i class="icon-home"></i>首页</a></li>
+                <li><a href="Home.aspx"><i class="icon-home"></i>首页</a></li>
                 <li><a href="#studentdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-user-circle-o"></i>学生管理 </a>
                     <ul id="studentdropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">学生信息管理</a></li>
-                        <li><a href="#">学生信息查看</a></li>
-                        <li><a href="#">学生信息插入</a></li>
+                        <li><a href="StudentInfo.aspx">学生信息查看</a></li>
+                        <li><a href="StudentFind.aspx">学生信息查找</a></li>
+                        <li><a href="StudentAdd.aspx">学生信息录入</a></li>
                     </ul>
                 </li>
                 <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-calendar" aria-hidden="true"></i>课程管理 </a>
@@ -215,7 +217,8 @@
                         <li><a href="#">新闻通知管理</a></li>
                     </ul>
                 </li>
-                <li><a href="login.html"><i class="icon-logout"></i>退出登录</a></li>
+                <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
+                <li><a href="Login.aspx"><i class="icon-logout"></i>退出登录</a></li>
             </ul>
         </nav>
         <!-- Sidebar Navigation end-->
