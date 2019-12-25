@@ -220,6 +220,9 @@
         </nav>
         <!-- Sidebar Navigation end-->
         <div class="page-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
         </div>
     </div>
 

@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\amazeui.min.css" />
+    <Content Include="css\app.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\font.css" />
     <Content Include="css\style.blue.css" />
@@ -376,6 +378,8 @@
     <Content Include="js\charts-custom.js" />
     <Content Include="js\charts-home.js" />
     <Content Include="js\front.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\theme.js" />
     <Content Include="stuTest.aspx" />
     <Content Include="Template.Master" />
     <Content Include="data\addresses.json" />
