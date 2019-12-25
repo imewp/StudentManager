@@ -173,7 +173,7 @@
                     <!-- Tasks end-->
                     
                     <!-- Log out -->
-                    <div class="list-inline-item logout"><a id="logout" href="login.html" class="nav-link"><span class="d-none d-sm-inline">Logout </span><i class="icon-logout"></i></a></div>
+                    <div class="list-inline-item logout"><a id="logout" href="login.html" class="nav-link"><span class="d-none d-sm-inline">退出登录 </span><i class="icon-logout"></i></a></div>
                 </div>
             </div>
         </nav>
