@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico" />
+   
 </head>
 <body>
       <div class="login-page">
@@ -54,11 +55,12 @@
                       <input id="login_password" type="password" runat="server" name="loginPassword"  data-msg="Please enter your password" class="input-material"/>
                       <label for="login-password" class="label-material">Password</label>
                     </div>
+                      
                       <asp:RadioButtonList ID="rbtnType" runat="server" RepeatDirection="Horizontal">
-                          <asp:ListItem>Administrator</asp:ListItem>
+                          <asp:ListItem Selected="True" style="padding-right: 30px;">Administrator</asp:ListItem>
                           <asp:ListItem>Student</asp:ListItem>
                       </asp:RadioButtonList>
-                    <asp:Button ID="submit" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="submit_Click" />
+                    <asp:Button ID="Submit" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="Submit_Click" />
                    <%-- <button type="submit" class="btn btn-primary">Login</button>--%>
                   </form><a href="#" class="forgot-pass">Forgot Password?</a>
                 </div>

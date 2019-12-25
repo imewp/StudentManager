@@ -43,8 +43,8 @@
                 <div class="navbar-header">
                     <!-- Navbar Header-->
                     <a href="index.html" class="navbar-brand">
-                        <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Dark</strong><strong>Admin</strong></div>
-                        <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div>
+                        <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">学生</strong><strong>管理系统</strong></div>
+                        <div class="brand-text brand-sm"><strong class="text-primary">S</strong><strong>M</strong></div>
                     </a>
                     <!-- Sidebar Toggle Btn-->
                     <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
@@ -173,7 +173,7 @@
                     <!-- Tasks end-->
                     
                     <!-- Log out -->
-                    <div class="list-inline-item logout"><a id="logout" href="login.html" class="nav-link"><span class="d-none d-sm-inline">Logout </span><i class="icon-logout"></i></a></div>
+                    <div class="list-inline-item logout"><a id="logout" href="Login.aspx" class="nav-link"><span class="d-none d-sm-inline">退出登录 </span><i class="icon-logout"></i></a></div>
                 </div>
             </div>
         </nav>
@@ -187,8 +187,10 @@
                 <div class="avatar">
                     <img src="img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle" /></div>
                 <div class="title">
-                    <h1 class="h5">Mark Stephen</h1>
-                    <p>Web Designer</p>
+                    <h1 class="h5">
+                        <asp:Label ID="lblName" runat="server" Text=""></asp:Label>
+                    </h1>
+                    <p>学生</p>
                 </div>
             </div>
             <!-- Sidebar Navidation Menus-->
@@ -196,25 +198,26 @@
             <ul class="list-unstyled">
                 <li><a href="index.html"><i class="icon-home"></i>首页</a></li>
                 <li><a href="login.html"><i class="icon-windows"></i>新闻列表</a></li>
-                <li><a href="#studentdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-user-circle-o"></i>学生信息 </a>
+                <li><a href="#studentdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-user-circle-o"></i>信息管理 </a>
                     <ul id="studentdropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">学生信息查看</a></li>
-                        <li><a href="#">学生信息修改</a></li>
+                        <li><a href="#">查看信息</a></li>
+                        <li><a href="#">修改信息</a></li>
                     </ul>
                 </li>
-                <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="icon-windows"></i>课程信息 </a>
+                <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="icon-windows"></i>课程管理 </a>
                     <ul id="coursedropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">课程信息查看</a></li>
+                        <li><a href="#">课程列表</a></li>
                         <li><a href="#">选择课程</a></li>
-                        <li><a href="#">成绩查询</a></li>
                     </ul>
                 </li>
-                <li><a href="login.html"><i class="icon-windows"></i>修改登录密码</a></li>
-                <li><a href="login.html"><i class="icon-logout"></i>退出登录</a></li>
+                <li><a href="login.html"><i class="icon-windows"></i>成绩查询</a></li>
+                <li><a href="login.html"><i class="icon-windows"></i>修改密码</a></li>
+                <li><a href="Login.aspx"><i class="icon-logout"></i>退出登录</a></li>
             </ul>
         </nav>
         <!-- Sidebar Navigation end-->
         <div class="page-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
         </div>
     </div>
 
