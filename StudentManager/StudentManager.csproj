@@ -19,8 +19,6 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <Use64BitIISExpress />
-    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\amazeui.min.css" />
+    <Content Include="css\app.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\font.css" />
     <Content Include="css\style.blue.css" />
@@ -69,7 +69,6 @@
     <Content Include="css\style.sea.css" />
     <Content Include="css\style.violet.css" />
     <Content Include="fonts\dark-dashboard.svg" />
-    <Content Include="Home.aspx" />
     <Content Include="icons-reference\fonts\dark-dashboard.svg" />
     <Content Include="icons-reference\icons-reference.html" />
     <Content Include="icons-reference\styles.css" />
@@ -379,14 +378,8 @@
     <Content Include="js\charts-custom.js" />
     <Content Include="js\charts-home.js" />
     <Content Include="js\front.js" />
-    <Content Include="Login.aspx" />
-    <Content Include="NewsAdd.aspx" />
-    <Content Include="NewsList.aspx" />
-    <Content Include="NewsManage.aspx" />
-    <Content Include="NewsShow.aspx" />
-    <Content Include="StudentAdd.aspx" />
-    <Content Include="StudentFind.aspx" />
-    <Content Include="StudentInfo.aspx" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\theme.js" />
     <Content Include="stuTest.aspx" />
     <Content Include="Template.Master" />
     <Content Include="data\addresses.json" />
@@ -581,70 +574,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsAdd.aspx.cs">
-      <DependentUpon>NewsAdd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsAdd.aspx.designer.cs">
-      <DependentUpon>NewsAdd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsList.aspx.cs">
-      <DependentUpon>NewsList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsList.aspx.designer.cs">
-      <DependentUpon>NewsList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsManage.aspx.cs">
-      <DependentUpon>NewsManage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsManage.aspx.designer.cs">
-      <DependentUpon>NewsManage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsShow.aspx.cs">
-      <DependentUpon>NewsShow.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsShow.aspx.designer.cs">
-      <DependentUpon>NewsShow.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentAdd.aspx.cs">
-      <DependentUpon>StudentAdd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentAdd.aspx.designer.cs">
-      <DependentUpon>StudentAdd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StudentFind.aspx.cs">
-      <DependentUpon>StudentFind.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentFind.aspx.designer.cs">
-      <DependentUpon>StudentFind.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StudentInfo.aspx.cs">
-      <DependentUpon>StudentInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentInfo.aspx.designer.cs">
-      <DependentUpon>StudentInfo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="StudentTemplate.Master.cs">
       <DependentUpon>StudentTemplate.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -677,16 +607,6 @@
   <ItemGroup>
     <Folder Include="vendor\font-awesome\less\" />
     <Folder Include="vendor\font-awesome\scss\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{1be5ce40-240d-4846-b5a7-6b65d8abbf9b}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SQLDAL\SQLDAL.csproj">
-      <Project>{721ec581-d3be-4b62-b165-cc7e92bcbb67}</Project>
-      <Name>SQLDAL</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
