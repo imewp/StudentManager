@@ -376,6 +376,7 @@
     <Content Include="js\charts-custom.js" />
     <Content Include="js\charts-home.js" />
     <Content Include="js\front.js" />
+    <Content Include="stuTest.aspx" />
     <Content Include="Template.Master" />
     <Content Include="data\addresses.json" />
     <Content Include="data\countries.json" />
@@ -394,6 +395,7 @@
     <Content Include="vendor\jquery.cookie\component.json" />
     <Content Include="vendor\jquery.cookie\cookie.jquery.json" />
     <Content Include="vendor\popper.js\umd\poppper.js.flow" />
+    <Content Include="StudentTemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -569,6 +571,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentTemplate.Master.cs">
+      <DependentUpon>StudentTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentTemplate.Master.designer.cs">
+      <DependentUpon>StudentTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="stuTest.aspx.cs">
+      <DependentUpon>stuTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stuTest.aspx.designer.cs">
+      <DependentUpon>stuTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
