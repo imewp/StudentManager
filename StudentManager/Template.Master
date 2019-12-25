@@ -43,8 +43,8 @@
                 <div class="navbar-header">
                     <!-- Navbar Header-->
                     <a href="index.html" class="navbar-brand">
-                        <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Dark</strong><strong>Admin</strong></div>
-                        <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div>
+                        <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">学生</strong><strong>管理系统</strong></div>
+                        <div class="brand-text brand-sm"><strong class="text-primary">S</strong><strong>M</strong></div>
                     </a>
                     <!-- Sidebar Toggle Btn-->
                     <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
@@ -202,14 +202,14 @@
                         <li><a href="#">学生信息插入</a></li>
                     </ul>
                 </li>
-                <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="icon-windows"></i>课程管理 </a>
+                <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-calendar" aria-hidden="true"></i>课程管理 </a>
                     <ul id="coursedropdownDropdown" class="collapse list-unstyled ">
                         <li><a href="#">课程信息查看</a></li>
                         <li><a href="#">课程信息添加</a></li>
                         <li><a href="#">课程成绩录入</a></li>
                     </ul>
                 </li>
-                <li><a href="#newsdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="icon-windows"></i>通知管理 </a>
+                <li><a href="#newsdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-newspaper-o" aria-hidden="true"></i>通知管理 </a>
                     <ul id="newsdropdownDropdown" class="collapse list-unstyled ">
                         <li><a href="#">新闻通知发布</a></li>
                         <li><a href="#">新闻通知管理</a></li>

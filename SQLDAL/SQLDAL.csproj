@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALadmin_user.cs" />
+    <Compile Include="DALcourse.cs" />
+    <Compile Include="DALnew.cs" />
+    <Compile Include="DALstudent_course.cs" />
+    <Compile Include="DALstudent_info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
