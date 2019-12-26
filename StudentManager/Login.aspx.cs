@@ -25,9 +25,9 @@ namespace StudentManager
             {
                 DALadmin_user dal = new DALadmin_user();
                 IList<admin_userEntity> admin = dal.Getadmin_usersbyCondition(" userName='" + name + "' and userPassword='" + pwd + "'");
-                string trueName = admin[0].TrueName.ToString();
                 if (admin.Count > 0)
                 {
+                    string trueName = admin[0].TrueName.ToString();
                     Session["adminID"] = name;
                     Session["TrueName"] = trueName;
                     Response.Redirect("Home.aspx");
