@@ -217,6 +217,14 @@
                         <li><a href="#">新闻通知管理</a></li>
                     </ul>
                 </li>
+                 <li><a href="#admindropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-newspaper-o" aria-hidden="true"></i>管理员管理
+
+                     </a>
+                    <ul id="admindropdownDropdown" class="collapse list-unstyled ">
+                        <li><a href="#">添加管理员</a></li>
+                        <li><a href="#">管理员列表</a></li>
+                    </ul>
+                </li>
                 <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
                 <li><a href="Login.aspx"><i class="icon-logout"></i>退出登录</a></li>
             </ul>

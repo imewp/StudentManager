@@ -59,6 +59,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminAdd.aspx" />
+    <Content Include="AdminList.aspx" />
     <Content Include="css\amazeui.min.css" />
     <Content Include="css\app.css" />
     <Content Include="css\custom.css" />
@@ -391,7 +393,6 @@
     <Content Include="StudentAdd.aspx" />
     <Content Include="StudentFind.aspx" />
     <Content Include="StudentInfo.aspx" />
-    <Content Include="stuTest.aspx" />
     <Content Include="Template.Master" />
     <Content Include="data\addresses.json" />
     <Content Include="data\countries.json" />
@@ -401,7 +402,6 @@
     <Content Include="icons-reference\fonts\dark-dashboard.eot" />
     <Content Include="icons-reference\fonts\dark-dashboard.ttf" />
     <Content Include="icons-reference\fonts\dark-dashboard.woff" />
-    <Content Include="Test.aspx" />
     <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
@@ -585,6 +585,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAdd.aspx.cs">
+      <DependentUpon>AdminAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAdd.aspx.designer.cs">
+      <DependentUpon>AdminAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminList.aspx.cs">
+      <DependentUpon>AdminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminList.aspx.designer.cs">
+      <DependentUpon>AdminList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -656,26 +670,12 @@
     <Compile Include="StudentTemplate.Master.designer.cs">
       <DependentUpon>StudentTemplate.Master</DependentUpon>
     </Compile>
-    <Compile Include="stuTest.aspx.cs">
-      <DependentUpon>stuTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="stuTest.aspx.designer.cs">
-      <DependentUpon>stuTest.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
