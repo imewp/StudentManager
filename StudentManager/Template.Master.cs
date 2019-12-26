@@ -11,7 +11,7 @@ namespace StudentManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-             lblname.Text = Session["TrueName"].ToString();
+             //lblname.Text = Session["TrueName"].ToString();
 
         }
     }
