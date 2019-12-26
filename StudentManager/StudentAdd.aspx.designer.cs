@@ -13,31 +13,31 @@ namespace StudentManager {
     public partial class StudentAdd {
         
         /// <summary>
-        /// txtStudentID 控件。
+        /// txtStuID 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStudentID;
+        protected global::System.Web.UI.WebControls.TextBox txtStuID;
         
         /// <summary>
-        /// txtStudentPassword 控件。
+        /// txtStuName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStudentPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtStuName;
         
         /// <summary>
-        /// txtStudentName 控件。
+        /// txtStuNation 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStudentName;
+        protected global::System.Web.UI.WebControls.TextBox txtStuNation;
         
         /// <summary>
         /// Image1 控件。
@@ -49,12 +49,57 @@ namespace StudentManager {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// fulStudentPhoto 控件。
+        /// fulStuPhoto 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fulStudentPhoto;
+        protected global::System.Web.UI.WebControls.FileUpload fulStuPhoto;
+        
+        /// <summary>
+        /// txtStuTelehpone 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStuTelehpone;
+        
+        /// <summary>
+        /// txtStuQQ 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStuQQ;
+        
+        /// <summary>
+        /// txtStuClass 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStuClass;
+        
+        /// <summary>
+        /// txtStuDormitory 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStuDormitory;
+        
+        /// <summary>
+        /// txtStuAddress 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStuAddress;
     }
 }
