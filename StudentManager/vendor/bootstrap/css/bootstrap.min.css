@@ -8208,6 +8208,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 .ml-auto, .mx-auto {
     margin-left: auto !important;
+    position:relative;
 }
 
 @media (min-width:576px) {

@@ -55,6 +55,13 @@
                                         <asp:TextBox ID="txtLinkTelephone" Width="450" runat="server" placeholder="请输入联系电话" CssClass="form-control" TextMode="Password"></asp:TextBox>
                                     </div>
                                 </div>
+                                <div class="line"></div>
+                                <div class="form-group row">
+                                    <div class="col-sm-9 ml-auto">
+                                        <button type="submit" class="btn btn-primary" style="margin-left:-350px;">Save changes</button>
+                                        <button type="submit" class="btn btn-secondary" >Cancel</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
