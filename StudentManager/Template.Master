@@ -190,7 +190,7 @@
                     <h1 class="h5">
                         <asp:Label ID="lblname" runat="server" Text=""></asp:Label>
                     </h1>
-                    <p>管理员</p>
+                    <p><asp:Label ID="lblType" runat="server" Text=""/></p>
                 </div>
             </div>
             <!-- Sidebar Navidation Menus-->
@@ -221,8 +221,8 @@
 
                      </a>
                     <ul id="admindropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">添加管理员</a></li>
-                        <li><a href="#">管理员列表</a></li>
+                        <li><a href="AdminAdd.aspx">添加管理员</a></li>
+                        <li><a href="AdminList.aspx">管理员列表</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
