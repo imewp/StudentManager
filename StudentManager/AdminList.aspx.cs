@@ -16,6 +16,8 @@ namespace StudentManager
         {
             if (!IsPostBack)//页面首次加载自动执行
             {
+                if (Session["adminID"] == null)
+                    Response.Redirect("Login.aspx");
                 LoadData();
             }
         }
