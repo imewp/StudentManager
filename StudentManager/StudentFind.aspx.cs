@@ -15,12 +15,12 @@ namespace StudentManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack)//页面首次加载自动执行
-            //{
-            //    if (Session["adminID"] == null)
-            //        Response.Redirect("Login.aspx");
-            //    LoadData();
-            //}
+            if (!IsPostBack)//页面首次加载自动执行
+            {
+                //if (Session["adminID"] == null)
+                //    Response.Redirect("Login.aspx");
+                LoadData();
+            }
         }
 
         /// <summary>
@@ -30,9 +30,12 @@ namespace StudentManager
         {
             string conditon = string.Empty;
             conditon = "(StudentId is not null and StudentId<>' ' )";
-            if (!string.IsNullOrEmpty(studentId.Value))
+            if (!string.IsNullOrEmpty(student.Value))
             {
-                conditon += " and StudentId like'%" + studentId.Value + "%'";
+                if(bsearch.Text=="学号")
+                    conditon += " and cast(StudentId as char) like'%" + student.Value + "%'";
+                else if(bsearch.Text=="姓名")
+                    conditon += " and StudentName like'%" + student.Value + "%'";
             }
             DALstudent_info dal = new DALstudent_info();
             IList<student_infoEntity> students = dal.Getstudent_infosbyCondition(conditon);//按照条件来查询数据
@@ -53,6 +56,11 @@ namespace StudentManager
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             bsearch.Text = "学号";
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            bsearch.Text = "姓名";
         }
 
     }

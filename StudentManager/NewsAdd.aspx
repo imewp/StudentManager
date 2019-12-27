@@ -34,63 +34,25 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">发布时间</label>
                                     <div class="col-sm-9">
-                                        <asp:TextBox ID="txtReleaseTime" runat="server" placeholder="例：2012-" CssClass="form-control"></asp:TextBox>
+                                        <asp:TextBox ID="txtReleaseTime" runat="server" placeholder="例：2012-12-25" CssClass="form-control"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="line"></div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">性别</label>
+                                    <label class="col-sm-3 form-control-label">发布内容</label>
                                     <div class="col-sm-9">
-                                        <input id="rdlSexMale" runat="server" type="radio" value="男" name="a" class="radio-template" />
-                                        <label for="rdlSexMale" style="margin-right: 50px;">男</label>
-                                        <input id="rdlSexFemale" runat="server" type="radio" checked="" value="女" name="a" class="radio-template" />
-                                        <label for="rdlSexFemale">女</label>
+                                        <asp:TextBox ID="txtContent" runat="server" CssClass="form-control" TextMode="MultiLine" Height="200px"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="line"></div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">联系电话</label>
+                                    <label class="col-sm-3 form-control-label">附件</label>
                                     <div class="col-sm-9">
-                                        <asp:TextBox ID="txtStuTelehpone" runat="server" placeholder="例：12345679810" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">QQ号码</label>
-                                    <div class="col-sm-9">
-                                        <asp:TextBox ID="txtStuQQ" runat="server" placeholder="例：12345679810" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">所在班级</label>
-                                    <div class="col-sm-9">
-                                        <asp:TextBox ID="txtStuClass" runat="server" placeholder="例：XXX专业XXXX级XX班" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">宿舍</label>
-                                    <div class="col-sm-9">
-                                        <asp:TextBox ID="txtStuDormitory" runat="server" placeholder="例：XX号楼XX层XXX" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">家庭住址</label>
-                                    <div class="col-sm-9">
-                                        <asp:TextBox ID="txtStuAddress" runat="server" placeholder="例：XX省XX市(XX县)XX区XXXX街道XXX单元XXX号" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row" style="margin-right: 50px; height: 500px;">
-                                    <label class="col-sm-3 form-control-label"></label>
-                                    <div class="col-sm-9" style="float: right;">
-                                        <asp:Image ID="Image1" runat="server" Width="100" Height="150" />
+                                        <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <br />
                                         <asp:FileUpload ID="fulStuPhoto" runat="server" />
                                     </div>
                                 </div>
-
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">

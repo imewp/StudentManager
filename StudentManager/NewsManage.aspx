@@ -25,6 +25,7 @@
                                                     <asp:Button ID="btnAdd" runat="server" Text="新增" CssClass="btn btn-primary" OnClick="btnAdd_Click" />
                                                 </div>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <div style="width:65%;"></div>
                                                 <input id="newsTitle" type="text" class="form-control" placeholder="输入新闻标题查找" runat="server" />
                                                 <div class="input-group-append">
                                                     <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary" Text="搜索" OnClick="btnSearch_Click" />

@@ -49,13 +49,13 @@ namespace StudentManager {
         protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
         
         /// <summary>
-        /// studentId 控件。
+        /// student 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText studentId;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText student;
         
         /// <summary>
         /// btnSearch 控件。

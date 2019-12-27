@@ -26,16 +26,17 @@
                                                     <asp:Button ID="btnAdd" runat="server" Text="新增" CssClass="btn btn-primary" OnClick="btnAdd_Click" />
                                                 </div>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                                <div style="width:600px;"></div>
+                                                <div style="width:55%;"></div>
                                                 <div class="input-group-prepend">
                                                     <asp:Button ID="bsearch" runat="server" Text="查询方式" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" />
                                                     <div class="dropdown-menu">
-                                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="dropdown-item" OnClick="LinkButton1_Click">学号</asp:LinkButton>
-                                                        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="dropdown-item">姓名</asp:LinkButton>
+                                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="dropdown-item" OnClick="LinkButton1_Click" Font-Size="Medium">学号</asp:LinkButton>
+                                                        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="dropdown-item" OnClick="LinkButton2_Click" Font-Size="Medium">姓名</asp:LinkButton>
                                                         <div class="dropdown-divider"></div>
+                                                        <a href="#" class="dropdown-item">查询方式</a>
                                                     </div>
                                                 </div>
-                                                <input id="studentId" type="text" class="form-control" placeholder="输入学号进行查找" runat="server" />
+                                                <input id="student" type="text" class="form-control" placeholder="输入学号/姓名进行查找" runat="server" />
                                                 <div class="input-group-append">
                                                     <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary" Text="搜索" OnClick="btnSearch_Click" />
                                                 </div>

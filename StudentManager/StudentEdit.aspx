@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
-            <li class="breadcrumb-item active">学生信息查看</li>
+            <li class="breadcrumb-item active">学生信息修改</li>
         </ul>
     </div>
     <section class="no-padding-top">
