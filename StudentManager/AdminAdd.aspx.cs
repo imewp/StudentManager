@@ -35,7 +35,8 @@ namespace StudentManager
             {
                 if (dal.Addadmin_user(admin) > 0)//执行
                 {
-                    this.Page.RegisterStartupScript("", "<script>alert('用户新增成功！');</script>");
+                    this.Page.RegisterStartupScript("", "<script>alert('用户新增成功！')</script>");
+                    Response.Redirect("AdminList.aspx");
                 }
                 else
                     this.Page.RegisterStartupScript("", "<script>alert('用户新增失败！');</script>");
