@@ -40,6 +40,13 @@
                                             <asp:BoundField DataField="TrueName" HeaderText="姓名" />
                                             <asp:BoundField DataField="LinkTelephone" HeaderText="联系电话" />
                                             <asp:BoundField DataField="LoginTimes" HeaderText="访问次数" />
+
+                                            <asp:TemplateField HeaderText="操作">
+                                                <ItemTemplate>
+
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+
                                         </Columns>
                                     </asp:GridView>
                                 </div>
