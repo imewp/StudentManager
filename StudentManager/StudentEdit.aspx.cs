@@ -4,14 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
 using Model;
 using SQLDAL;
 
-
 namespace StudentManager
 {
-    public partial class StudentFind : System.Web.UI.Page
+    public partial class StudentInfo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,38 +20,31 @@ namespace StudentManager
             //    LoadData();
             //}
         }
-
         /// <summary>
         /// 加载数据信息
         /// </summary>
         public void LoadData()
         {
-            string conditon = string.Empty;
-            conditon = "(StudentId is not null and StudentId<>' ' )";
-            if (!string.IsNullOrEmpty(studentId.Value))
-            {
-                conditon += " and StudentId like'%" + studentId.Value + "%'";
-            }
-            DALstudent_info dal = new DALstudent_info();
-            IList<student_infoEntity> students = dal.Getstudent_infosbyCondition(conditon);//按照条件来查询数据
-            GridView1.DataSource = students;
-            GridView1.DataBind();
+            //string conditon = string.Empty;
+            //conditon = "(StudentId is not null and StudentId<>' ' )";
+            //if (!string.IsNullOrEmpty(studentId.Value))
+            //{
+            //    conditon += " and StudentId='" + studentId.Value + "'";
+            //}
+            //DALstudent_info dal = new DALstudent_info();
+            //IList<student_infoEntity> students = dal.Getstudent_infosbyCondition(conditon);//按照条件来查询数据
+            //GridView1.DataSource = students;
+            //GridView1.DataBind();
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            Response.Redirect("StudentAdd.aspx");
+            //Response.Redirect("StudentAdd.aspx");
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            LoadData();
+            //LoadData();
         }
-
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            bsearch.Text = "学号";
-        }
-
     }
 }

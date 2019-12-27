@@ -16,8 +16,8 @@ namespace StudentManager
         {
             if (!IsPostBack)//页面首次加载自动执行
             {
-                if (Session["adminID"] == null)
-                    Response.Redirect("Login.aspx");
+                //if (Session["adminID"] == null)
+                //    Response.Redirect("Login.aspx");
                 LoadData();
             }
         }
@@ -31,7 +31,7 @@ namespace StudentManager
             conditon = "(UserName is not null and UserName<>' ')";
             if (!string.IsNullOrEmpty(user_name.Value))
             {
-                conditon += " and UserName='" + user_name.Value + "'";
+                conditon += " and UserName like'%" + user_name.Value + "%'";
             }
             DALadmin_user dal = new DALadmin_user();
             IList<admin_userEntity> admins = dal.Getadmin_usersbyCondition(conditon);//按照条件来查询数据
