@@ -22,7 +22,7 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <asp:Button ID="btnAdd" runat="server" Text="新增" CssClass="btn btn-primary" OnClick="btnAdd_Click" />
+                                                    <asp:Button ID="btnAdd" runat="server" Text="新增"  CssClass="btn btn-primary" OnClick="btnAdd_Click"/>
                                                 </div>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                                 <input id="user_name" type="text" class="form-control" placeholder="输入用户名查找" runat="server" />
@@ -34,21 +34,34 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover">
+                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover"
+                                         OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing"
+                                         DataKeyNames="Id" OnRowCancelingEdit="GridView1_RowCancelingEdit" 
+                                         OnRowCommand="GridView1_RowCommand" OnRowCreated="GridView1_RowCreated" 
+                                         OnRowUpdating="GridView1_RowUpdating">
                                         <Columns>
                                             <asp:BoundField DataField="UserName" HeaderText="用户名" />
                                             <asp:BoundField DataField="TrueName" HeaderText="姓名" />
                                             <asp:BoundField DataField="LinkTelephone" HeaderText="联系电话" />
-                                            <asp:BoundField DataField="LoginTimes" HeaderText="访问次数" />
-
+                                            <asp:BoundField DataField="LoginTimes" HeaderText="访问次数" ReadOnly="True" />
+                                            <asp:CommandField ShowEditButton="True" />
+                                            <asp:CommandField ShowDeleteButton="True" />
+                                            <asp:TemplateField>
+                                                <ItemTemplate>
+                                                    <asp:LinkButton ID="lbtnReset" runat="server"  CommandName="reset" ToolTip="重置当前用户的密码">重置</asp:LinkButton>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
                                         </Columns>
                                     </asp:GridView>
                                 </div>
                             </form>
                         </div>
                     </div>
+
+
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </asp:Content>
