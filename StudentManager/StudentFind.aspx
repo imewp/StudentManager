@@ -26,7 +26,7 @@
                                                     <asp:Button ID="btnAdd" runat="server" Text="新增" CssClass="btn btn-primary" OnClick="btnAdd_Click" />
                                                 </div>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                                <div style="width:55%;"></div>
+                                                <div style="width: 55%;"></div>
                                                 <div class="input-group-prepend">
                                                     <asp:Button ID="bsearch" runat="server" Text="查询方式" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" />
                                                     <div class="dropdown-menu">
@@ -45,7 +45,9 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover">
+                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
+                                        CssClass="table table-striped table-hover" 
+                                        OnRowCommand="GridView1_RowCommand" OnRowCreated="GridView1_RowCreated" DataKeyNames="Id" AllowPaging="True">
                                         <Columns>
                                             <asp:BoundField DataField="StudentId" HeaderText="学号" />
                                             <asp:BoundField DataField="StudentName" HeaderText="姓名" />
@@ -55,9 +57,13 @@
                                             <asp:BoundField DataField="StudentClass" HeaderText="所在班级" />
                                             <asp:TemplateField HeaderText="操作">
                                                 <ItemTemplate>
+                                                    <asp:LinkButton ID="lb1" CommandName="edit" runat="server">编辑</asp:LinkButton>||
+                                                    <asp:LinkButton ID="lb2" CommandName="del" runat="server" OnClientClick="javascript:return confirm('确定删除吗?');">删除</asp:LinkButton>||
+                                                    <asp:LinkButton ID="lb3" CommandName="reset" runat="server" ToolTip="重置当前学生的密码">重置</asp:LinkButton>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>
+                                        <PagerSettings FirstPageText="首页" LastPageText="末页" Mode="NumericFirstLast" NextPageText="下一页" PreviousPageText="上一页" />
                                     </asp:GridView>
                                 </div>
                             </form>

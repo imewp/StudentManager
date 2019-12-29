@@ -104,10 +104,10 @@
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">
-                                        <%--<asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnAdd_Click" />
-                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel" OnClick="btnCancel_Click" />--%>
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                        <button type="submit" class="btn btn-secondary">Cancel</button>
+                                        <asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnAdd_Click"/>
+                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel"/>
+                                       <%-- <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="submit" class="btn btn-secondary">Cancel</button>--%>
                                     </div>
                                 </div>
                             </form>

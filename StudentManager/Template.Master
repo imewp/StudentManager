@@ -217,7 +217,7 @@
                         <li><a href="NewsManage.aspx">管理通知</a></li>
                     </ul>
                 </li>
-                 <li><a href="#admindropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-newspaper-o" aria-hidden="true"></i>管理员管理
+                 <li><a href="#admindropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-unlock-alt" aria-hidden="true"></i>管理员管理
 
                      </a>
                     <ul id="admindropdownDropdown" class="collapse list-unstyled ">

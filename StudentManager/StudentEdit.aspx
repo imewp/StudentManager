@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="StudentInfo.aspx.cs" Inherits="StudentManager.StudentInfo" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="StudentEdit.aspx.cs" Inherits="StudentManager.StudentEdit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
             <li class="breadcrumb-item active">学生信息修改</li>
@@ -20,16 +19,9 @@
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">学生登录账号</label>
                                         <div class="col-sm-9">
-                                            <asp:Label ID="lblStuID" runat="server" Text="Label" CssClass="form-control"></asp:Label>
+                                            <asp:Label ID="lblStuID" runat="server" Text="" CssClass="form-control"></asp:Label>
                                         </div>
                                     </div>
-                                    <%--<div class="line"></div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 form-control-label">学生登录密码</label>
-                                        <div class="col-sm-9">
-                                            <asp:TextBox ID="txtStudentPassword"  runat="server" placeholder="请输入6-16位的密码" CssClass="form-control"></asp:TextBox>
-                                        </div>
-                                    </div>--%>
                                     <div class="line"></div>
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">学生姓名</label>
@@ -50,7 +42,7 @@
                                         <div class="col-sm-9">
                                             <input id="rdlSexMale" runat="server" type="radio" value="男" name="a" class="radio-template" />
                                             <label for="rdlSexMale" style="margin-right: 50px;">男</label>
-                                            <input id="rdlSexFemale" runat="server" type="radio" checked="" value="女" name="a" class="radio-template" />
+                                            <input id="rdlSexFemale" runat="server" type="radio"  value="女" name="a" class="radio-template" />
                                             <label for="rdlSexFemale">女</label>
                                         </div>
                                     </div>
@@ -101,12 +93,12 @@
                                 </div>
 
                                 <div class="line"></div>
-                                <div class="form-group row">
+                               <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">
-                                        <%--<asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnAdd_Click" />
-                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel" OnClick="btnCancel_Click" />--%>
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                        <button type="submit" class="btn btn-secondary">Cancel</button>
+                                        <asp:Button ID="btnEdit" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnEdit_Click"/>
+                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel"/>
+                                       <%-- <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="submit" class="btn btn-secondary">Cancel</button>--%>
                                     </div>
                                 </div>
                             </form>

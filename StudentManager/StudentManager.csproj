@@ -391,8 +391,8 @@
     <Content Include="NewsManage.aspx" />
     <Content Include="NewsShow.aspx" />
     <Content Include="StudentAdd.aspx" />
-    <Content Include="StudentFind.aspx" />
     <Content Include="StudentEdit.aspx" />
+    <Content Include="StudentFind.aspx" />
     <Content Include="Template.Master" />
     <Content Include="data\addresses.json" />
     <Content Include="data\countries.json" />
@@ -649,19 +649,19 @@
     <Compile Include="StudentAdd.aspx.designer.cs">
       <DependentUpon>StudentAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="StudentFind.aspx.cs">
-      <DependentUpon>StudentFind.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentFind.aspx.designer.cs">
-      <DependentUpon>StudentFind.aspx</DependentUpon>
-    </Compile>
     <Compile Include="StudentEdit.aspx.cs">
       <DependentUpon>StudentEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="StudentEdit.aspx.designer.cs">
       <DependentUpon>StudentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFind.aspx.cs">
+      <DependentUpon>StudentFind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentFind.aspx.designer.cs">
+      <DependentUpon>StudentFind.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentTemplate.Master.cs">
       <DependentUpon>StudentTemplate.Master</DependentUpon>
@@ -679,6 +679,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="img\studentphone\" />
     <Folder Include="vendor\font-awesome\less\" />
     <Folder Include="vendor\font-awesome\scss\" />
   </ItemGroup>
