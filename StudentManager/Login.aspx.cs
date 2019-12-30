@@ -28,8 +28,11 @@ namespace StudentManager
                 if (admin.Count > 0)
                 {
                     string trueName = admin[0].TrueName.ToString();
+                    int id = admin[0].Id;
                     Session["adminID"] = name;
                     Session["TrueName"] = trueName;
+                    Session["Pwd"] = pwd;
+                    Session["id"] = id;
                     Response.Redirect("Home.aspx");
                 }
                 else
