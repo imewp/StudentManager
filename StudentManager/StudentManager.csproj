@@ -61,6 +61,11 @@
   <ItemGroup>
     <Content Include="AdminAdd.aspx" />
     <Content Include="AdminList.aspx" />
+    <Content Include="CourseAdd.aspx" />
+    <Content Include="CourseFind.aspx" />
+    <Content Include="CourseList.aspx" />
+    <Content Include="CourseScore.aspx" />
+    <Content Include="CourseSelect.aspx" />
     <Content Include="css\amazeui.min.css" />
     <Content Include="css\app.css" />
     <Content Include="css\custom.css" />
@@ -603,6 +608,41 @@
       <DependentUpon>AdminList.aspx</DependentUpon>
     </Compile>
     <Compile Include="CommonClass.cs" />
+    <Compile Include="CourseAdd.aspx.cs">
+      <DependentUpon>CourseAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseAdd.aspx.designer.cs">
+      <DependentUpon>CourseAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseFind.aspx.cs">
+      <DependentUpon>CourseFind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseFind.aspx.designer.cs">
+      <DependentUpon>CourseFind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseList.aspx.cs">
+      <DependentUpon>CourseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseList.aspx.designer.cs">
+      <DependentUpon>CourseList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseScore.aspx.cs">
+      <DependentUpon>CourseScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseScore.aspx.designer.cs">
+      <DependentUpon>CourseScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseSelect.aspx.cs">
+      <DependentUpon>CourseSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseSelect.aspx.designer.cs">
+      <DependentUpon>CourseSelect.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -49,7 +49,7 @@ namespace StudentManager
             string name = txtUserName.Text;
             IList<admin_userEntity> admins = dal.Getadmin_usersbyCondition(" userName='" + name + "'");
             if (admins.Count > 0)
-                this.Page.RegisterStartupScript("", "<script>alert('该用户名已存在！');</script>");
+                this.Page.RegisterStartupScript("", "<script>alert('该账号已存在！');</script>");
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)

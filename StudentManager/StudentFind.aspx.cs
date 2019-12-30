@@ -257,9 +257,9 @@ namespace StudentManager
 
         protected void GridView1_PageIndexChanged(object sender, EventArgs e)
         {
-            GridView1.PageIndex = e.NewPageIndex;
-            GridView1.datasource = "数据源";               //引用刚才建立的数据源
-            GridView1.DataBind();
+            //GridView1.PageIndex = e.NewPageIndex;
+            //GridView1.datasource = "数据源";               //引用刚才建立的数据源
+            //GridView1.DataBind();
         }
     }
 }
