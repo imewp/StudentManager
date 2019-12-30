@@ -386,6 +386,8 @@
     <Content Include="js\jquery.min.js" />
     <Content Include="js\theme.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Model\end.txt" />
+    <Content Include="Model\top.txt" />
     <Content Include="NewsAdd.aspx" />
     <Content Include="NewsList.aspx" />
     <Content Include="NewsManage.aspx" />
@@ -599,6 +601,7 @@
     <Compile Include="AdminList.aspx.designer.cs">
       <DependentUpon>AdminList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CommonClass.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
