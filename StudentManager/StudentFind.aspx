@@ -44,27 +44,38 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="table-responsive">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
-                                        CssClass="table table-striped table-hover" 
-                                        OnRowCommand="GridView1_RowCommand" OnRowCreated="GridView1_RowCreated" DataKeyNames="Id" AllowPaging="True">
-                                        <Columns>
-                                            <asp:BoundField DataField="StudentId" HeaderText="学号" />
-                                            <asp:BoundField DataField="StudentName" HeaderText="姓名" />
-                                            <asp:BoundField DataField="StudentSex" HeaderText="性别" />
-                                            <asp:BoundField DataField="StudentNation" HeaderText="民族" />
-                                            <asp:BoundField DataField="StudentTelehpone" HeaderText="联系电话" />
-                                            <asp:BoundField DataField="StudentClass" HeaderText="所在班级" />
-                                            <asp:TemplateField HeaderText="操作">
-                                                <ItemTemplate>
-                                                    <asp:LinkButton ID="lb1" CommandName="edit" runat="server">编辑</asp:LinkButton>||
+                                <div class="line"></div>
+                                <div class="form-group row">
+                                    <div class="table-responsive">
+                                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
+                                            CssClass="table table-striped table-hover"
+                                            OnRowCommand="GridView1_RowCommand" OnRowCreated="GridView1_RowCreated" DataKeyNames="Id" AllowPaging="True">
+                                            <Columns>
+                                                <asp:BoundField DataField="StudentId" HeaderText="学号" />
+                                                <asp:BoundField DataField="StudentName" HeaderText="姓名" />
+                                                <asp:BoundField DataField="StudentSex" HeaderText="性别" />
+                                                <asp:BoundField DataField="StudentNation" HeaderText="民族" />
+                                                <asp:BoundField DataField="StudentTelehpone" HeaderText="联系电话" />
+                                                <asp:BoundField DataField="StudentClass" HeaderText="所在班级" />
+                                                <asp:TemplateField HeaderText="操作">
+                                                    <ItemTemplate>
+                                                        <asp:LinkButton ID="lb1" CommandName="edit" runat="server">编辑</asp:LinkButton>||
                                                     <asp:LinkButton ID="lb2" CommandName="del" runat="server" OnClientClick="javascript:return confirm('确定删除吗?');">删除</asp:LinkButton>||
                                                     <asp:LinkButton ID="lb3" CommandName="reset" runat="server" ToolTip="重置当前学生的密码">重置</asp:LinkButton>
-                                                </ItemTemplate>
-                                            </asp:TemplateField>
-                                        </Columns>
-                                        <PagerSettings FirstPageText="首页" LastPageText="末页" Mode="NumericFirstLast" NextPageText="下一页" PreviousPageText="上一页" />
-                                    </asp:GridView>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                            <PagerSettings FirstPageText="首页" LastPageText="末页" Mode="NumericFirstLast" NextPageText="下一页" PreviousPageText="上一页" />
+                                        </asp:GridView>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="form-group row">
+                                    <div class="col-sm-9 ml-auto">
+                                        <asp:FileUpload ID="FileUpload1" runat="server" Width="80" />
+                                        <asp:Button ID="btnImport" runat="server" CssClass="btn btn-primary" Text="导入" />
+                                        <asp:Button ID="btnExport" runat="server" CssClass="btn btn-primary" Text="导出" />
+                                    </div>
                                 </div>
                             </form>
                         </div>

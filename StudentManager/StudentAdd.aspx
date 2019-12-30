@@ -24,13 +24,6 @@
                                             <asp:TextBox ID="txtStuID" runat="server" placeholder="账号不得长于20个字符" CssClass="form-control"></asp:TextBox>
                                         </div>
                                     </div>
-                                    <%--<div class="line"></div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 form-control-label">学生登录密码</label>
-                                        <div class="col-sm-9">
-                                            <asp:TextBox ID="txtStudentPassword"  runat="server" placeholder="请输入6-16位的密码" CssClass="form-control"></asp:TextBox>
-                                        </div>
-                                    </div>--%>
                                     <div class="line"></div>
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">学生姓名</label>
