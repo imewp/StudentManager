@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 using Model;
 using SQLDAL;
+using System.Data;
 
 
 namespace StudentManager
@@ -39,6 +40,7 @@ namespace StudentManager
             }
             DALstudent_info dal = new DALstudent_info();
             IList<student_infoEntity> students = dal.Getstudent_infosbyCondition(conditon);//按照条件来查询数据
+            ViewState["data"] = students;//在当前页缓存加载的数据，减少后续访问时读写外存的次数。
             GridView1.DataSource = students;
             GridView1.DataBind();
         }
@@ -108,6 +110,46 @@ namespace StudentManager
                     break;
 
             }
+        }
+
+        /// <summary>
+        /// 导出数据到Excel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnExport_Click(object sender, EventArgs e)
+        {
+            IList<student_infoEntity> students = (IList<student_infoEntity>)ViewState["data"];
+            DataTable dt = new DataTable();//定义datatable
+            //为datatable添加列
+            dt.Columns.Add("sno");
+            dt.Columns.Add("name");
+            dt.Columns.Add("sex");
+            dt.Columns.Add("mz");
+            dt.Columns.Add("phone");
+            dt.Columns.Add("QQ");
+            dt.Columns.Add("class");
+            dt.Columns.Add("ss");
+            dt.Columns.Add("address");
+            dt.AcceptChanges();//接收添加，确认
+            foreach (student_infoEntity student in students)
+            {
+                DataRow dr = dt.NewRow();//根据datatable模板创建一行
+                dr[0] = student.StudentId;
+                dr[1] = student.StudentName;
+                dr[2] = student.StudentSex;
+                dr[3] = student.StudentNation;
+                dr[4] = student.StudentPhoto;
+                dr[5] = student.StudentQQ;
+                dr[6] = student.StudentClass;
+                dr[7] = student.StudentDormitory;
+                dr[8] = student.StudentAddress;
+                dt.Rows.Add(dr);//为datatable添加行
+            }
+            dt.AcceptChanges();
+            string[] titles = { "学号", "姓名", "性别", "民族", "联系电话", "QQ号码", "班级", "宿舍", "家庭住址" };
+            string title = "学生信息表";
+            CommonClass.ExportToExcel_NoFormat(dt, titles, title);
         }
     }
 }
