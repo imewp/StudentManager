@@ -49,7 +49,7 @@
                                     <div class="table-responsive">
                                         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
                                             CssClass="table table-striped table-hover"
-                                            OnRowCommand="GridView1_RowCommand" OnRowCreated="GridView1_RowCreated" DataKeyNames="Id" AllowPaging="True" AllowSorting="True">
+                                            OnRowCommand="GridView1_RowCommand" OnRowCreated="GridView1_RowCreated" DataKeyNames="Id" AllowPaging="True" AllowSorting="True" OnPageIndexChanged="GridView1_PageIndexChanged">
                                             <Columns>
                                                 <asp:BoundField DataField="StudentId" HeaderText="学号" />
                                                 <asp:BoundField DataField="StudentName" HeaderText="姓名" />
