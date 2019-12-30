@@ -73,8 +73,8 @@
                                 <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">
                                         <asp:FileUpload ID="FileUpload1" runat="server" Width="80" />
-                                        <asp:Button ID="btnImport" runat="server" CssClass="btn btn-primary" Text="导入" OnClick="btnImport_Click" />
-                                        <asp:Button ID="btnExport" runat="server" CssClass="btn btn-primary" Text="导出" />
+                                        <asp:Button ID="btnImport" runat="server" CssClass="btn btn-primary" Text="导入" />
+                                        <asp:Button ID="btnExport" runat="server" CssClass="btn btn-primary" Text="导出" OnClick="btnExport_Click" />
                                     </div>
                                 </div>
                             </form>
