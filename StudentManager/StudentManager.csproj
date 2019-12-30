@@ -72,6 +72,7 @@
     <Content Include="css\style.red.css" />
     <Content Include="css\style.sea.css" />
     <Content Include="css\style.violet.css" />
+    <Content Include="EditPwd.aspx" />
     <Content Include="fonts\dark-dashboard.svg" />
     <Content Include="Home.aspx" />
     <Content Include="icons-reference\fonts\dark-dashboard.svg" />
@@ -603,6 +604,13 @@
       <DependentUpon>AdminList.aspx</DependentUpon>
     </Compile>
     <Compile Include="CommonClass.cs" />
+    <Compile Include="EditPwd.aspx.cs">
+      <DependentUpon>EditPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPwd.aspx.designer.cs">
+      <DependentUpon>EditPwd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

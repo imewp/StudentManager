@@ -11,8 +11,8 @@ namespace StudentManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string name = Session["adminID"].ToString();
-            //lblname.Text = Session["TrueName"].ToString();
+            string name = Session["adminID"].ToString();
+            lblname.Text = Session["TrueName"].ToString();
             //if (name == "admin")              
             //    lblType.Text = "超级管理员";
             //else
