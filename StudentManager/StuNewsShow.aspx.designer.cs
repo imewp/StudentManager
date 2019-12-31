@@ -10,7 +10,7 @@
 namespace StudentManager {
     
     
-    public partial class NewsShow1 {
+    public partial class NewsShow {
         
         /// <summary>
         /// lt1 控件。

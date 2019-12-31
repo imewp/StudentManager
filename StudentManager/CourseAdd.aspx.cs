@@ -37,7 +37,7 @@ namespace StudentManager
             if(dal.Addcourse(course)>0)
             {
                 this.Page.RegisterStartupScript("", "<script>alert('成功增加新课程！')</script>");
-                Response.Redirect("CourseFind.aspx");
+                Response.Redirect("Courselist.aspx");
             }
             else
                 this.Page.RegisterStartupScript("", "<script>alert('增加新课程失败！');</script>");

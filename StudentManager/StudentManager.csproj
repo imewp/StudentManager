@@ -66,7 +66,7 @@
     <Content Include="AdminAdd.aspx" />
     <Content Include="AdminList.aspx" />
     <Content Include="CourseAdd.aspx" />
-    <Content Include="CourseFind.aspx" />
+    <Content Include="StuCourseFind.aspx" />
     <Content Include="CourseList.aspx" />
     <Content Include="CourseScore.aspx" />
     <Content Include="CourseSelect.aspx" />
@@ -403,6 +403,7 @@
     <Content Include="NewsList.aspx" />
     <Content Include="NewsManage.aspx" />
     <Content Include="NewsShow.aspx" />
+    <Content Include="StuNewsShow.aspx" />
     <Content Include="StudentAdd.aspx" />
     <Content Include="StudentEdit.aspx" />
     <Content Include="StudentFind.aspx" />
@@ -903,12 +904,12 @@
     <Compile Include="CourseAdd.aspx.designer.cs">
       <DependentUpon>CourseAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CourseFind.aspx.cs">
-      <DependentUpon>CourseFind.aspx</DependentUpon>
+    <Compile Include="StuCourseFind.aspx.cs">
+      <DependentUpon>StuCourseFind.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CourseFind.aspx.designer.cs">
-      <DependentUpon>CourseFind.aspx</DependentUpon>
+    <Compile Include="StuCourseFind.aspx.designer.cs">
+      <DependentUpon>StuCourseFind.aspx</DependentUpon>
     </Compile>
     <Compile Include="CourseList.aspx.cs">
       <DependentUpon>CourseList.aspx</DependentUpon>
@@ -986,6 +987,13 @@
     </Compile>
     <Compile Include="NewsShow.aspx.designer.cs">
       <DependentUpon>NewsShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StuNewsShow.aspx.cs">
+      <DependentUpon>StuNewsShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StuNewsShow.aspx.designer.cs">
+      <DependentUpon>StuNewsShow.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentAdd.aspx.cs">

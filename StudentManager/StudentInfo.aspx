@@ -97,8 +97,6 @@
                                     <div class="col-sm-9 ml-auto">
                                         <asp:Button ID="btnEdit" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnEdit_Click"/>
                                         <asp:Button ID="btnReturn" CssClass="btn btn-secondary" runat="server" Text="Return"/>
-                                       <%-- <button type="submit" class="btn btn-primary">Save changes</button>
-                                        <button type="submit" class="btn btn-secondary">Cancel</button>--%>
                                     </div>
                                 </div>
                             </form>

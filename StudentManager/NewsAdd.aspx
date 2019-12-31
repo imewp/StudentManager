@@ -8,6 +8,7 @@
     <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
+            <li class="breadcrumb-item"><a href="NewsManage.aspx">新闻通知列表</a></li>
             <li class="breadcrumb-item active">新闻通知添加</li>
         </ul>
     </div>
@@ -27,13 +28,6 @@
                                         <asp:TextBox ID="txtTitle" runat="server" placeholder="标题不得长于100个字符" CssClass="form-control"></asp:TextBox>
                                     </div>
                                 </div>
-                                <%--<div class="line"></div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">发布者</label>
-                                    <div class="col-sm-9">
-                                        <asp:TextBox ID="txtAuthor" runat="server" placeholder="姓名不得长于10个字" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                </div>--%>
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">发布时间</label>
