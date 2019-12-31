@@ -22,15 +22,6 @@ namespace StudentManager {
         protected global::System.Web.UI.WebControls.TextBox txtTitle;
         
         /// <summary>
-        /// txtAuthor 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAuthor;
-        
-        /// <summary>
         /// txtReleaseTime 控件。
         /// </summary>
         /// <remarks>
@@ -40,30 +31,39 @@ namespace StudentManager {
         protected global::System.Web.UI.WebControls.TextBox txtReleaseTime;
         
         /// <summary>
-        /// txtContent 控件。
+        /// content 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContent;
+        protected global::System.Web.UI.WebControls.HiddenField content;
         
         /// <summary>
-        /// TextBox1 控件。
+        /// FileUpload1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// fulStuPhoto 控件。
+        /// btnAdd 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fulStuPhoto;
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// btnCancel 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

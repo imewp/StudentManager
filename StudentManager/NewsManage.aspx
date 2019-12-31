@@ -25,7 +25,7 @@
                                                     <asp:Button ID="btnAdd" runat="server" Text="新增" CssClass="btn btn-primary" OnClick="btnAdd_Click" />
                                                 </div>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                                <div style="width:65%;"></div>
+                                                <div style="width: 65%;"></div>
                                                 <input id="newsTitle" type="text" class="form-control" placeholder="输入新闻标题查找" runat="server" />
                                                 <div class="input-group-append">
                                                     <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary" Text="搜索" OnClick="btnSearch_Click" />
@@ -35,15 +35,34 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover">
-                                        <Columns>
-                                            <asp:BoundField DataField="Title" HeaderText="标题" />
-                                            <asp:BoundField DataField="Author" HeaderText="发布者" />
-                                            <asp:BoundField DataField="ReleaseTime" HeaderText="发布时间" />
-                                            <%--<asp:BoundField DataField="Content" HeaderText="内容" />--%>
-                                            <asp:BoundField DataField="RelateFile" HeaderText="相关附件" />
-                                        </Columns>
-                                    </asp:GridView>
+                                    <asp:Repeater ID="Repeater1" runat="server">
+                                        <HeaderTemplate>
+                                            <table width="100%" class="table table-striped table-hover" id="example-r">
+                                                <thead>
+                                                    <tr>
+                                                        <th>文章标题</th>
+                                                        <th>发布者</th>
+                                                        <th>发布时间</th>
+                                                    </tr>
+                                                </thead>
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                            <tr class="gradeX">
+                                                <td>
+                                                    <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Id", "~/NewsShow.aspx?id={0}")%>'></asp:HyperLink>
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Author") %>'></asp:Label>
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("ReleaseTime") %>'></asp:Label>
+                                                </td>
+                                            </tr>
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </table>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
                                 </div>
                             </form>
                         </div>
