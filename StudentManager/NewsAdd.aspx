@@ -1,6 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="NewsAdd.aspx.cs" Inherits="StudentManager.NewsAdd" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="NewsAdd.aspx.cs" Inherits="StudentManager.NewsAdd" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="ueditor/themes/default/ueditor.css" />
+
     <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
@@ -23,43 +27,57 @@
                                         <asp:TextBox ID="txtTitle" runat="server" placeholder="标题不得长于100个字符" CssClass="form-control"></asp:TextBox>
                                     </div>
                                 </div>
-                                <div class="line"></div>
+                                <%--<div class="line"></div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">发布者</label>
                                     <div class="col-sm-9">
                                         <asp:TextBox ID="txtAuthor" runat="server" placeholder="姓名不得长于10个字" CssClass="form-control"></asp:TextBox>
                                     </div>
-                                </div>
+                                </div>--%>
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">发布时间</label>
                                     <div class="col-sm-9">
-                                        <asp:TextBox ID="txtReleaseTime" runat="server" placeholder="例：2012-12-25" CssClass="form-control"></asp:TextBox>
+
+                                        <asp:TextBox ID="txtReleaseTime" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">发布内容</label>
                                     <div class="col-sm-9">
-                                        <asp:TextBox ID="txtContent" runat="server" CssClass="form-control" TextMode="MultiLine" Height="200px"></asp:TextBox>
+                                        <asp:HiddenField ID="content" runat="server" />
+                                        <div id="txteditor" style="height: 500px;"></div>
+                                        <script type="text/javascript">
+                                            var temp = document.getElementById("<%=content.ClientID %>").value;
+                                            var ue = new baidu.editor.ui.Editor();
+                                            
+                                            ue.render("txteditor");   //这里填写要改变为编辑器的控件id 
+                                            ue.ready(function () {
+                                                ue.setContent(temp);
+                                            })
+                                        </script>
+                                        <script type="text/javascript">
+                                            function getContent() {
+                                                var temp = UE.getEditor('txteditor').getContent();
+                                                //alert(temp); 
+                                                document.getElementById("<%=content.ClientID %>").value = temp;
+                                            }
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">附件</label>
                                     <div class="col-sm-9">
-                                        <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-                                        <br />
-                                        <asp:FileUpload ID="fulStuPhoto" runat="server" />
+                                        <asp:FileUpload ID="FileUpload1" runat="server" />
                                     </div>
                                 </div>
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">
-                                        <%--<asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnAdd_Click" />
-                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel" OnClick="btnCancel_Click" />--%>
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                        <button type="submit" class="btn btn-secondary">Cancel</button>
+                                        <asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save" OnClientClick="getContent()" OnClick="btnAdd_Click" />
+                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                     </div>
                                 </div>
                             </form>

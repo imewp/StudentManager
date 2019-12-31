@@ -35,9 +35,10 @@ namespace StudentManager
             }
             DALnew dal = new DALnew();
             IList<newEntity> news = dal.GetnewsbyCondition(conditon);//按照条件来查询数据
-            GridView1.DataSource = news;
-            GridView1.DataBind();
+            Repeater1.DataSource = news;
+            Repeater1.DataBind();
         }
+
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
