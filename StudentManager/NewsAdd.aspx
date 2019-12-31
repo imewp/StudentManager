@@ -25,7 +25,7 @@
                                 </div>
                                 <div class="line"></div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">作者/发布者</label>
+                                    <label class="col-sm-3 form-control-label">发布者</label>
                                     <div class="col-sm-9">
                                         <asp:TextBox ID="txtAuthor" runat="server" placeholder="姓名不得长于10个字" CssClass="form-control"></asp:TextBox>
                                     </div>

@@ -80,6 +80,7 @@
     <Content Include="EditAdminPwd.aspx" />
     <Content Include="fonts\dark-dashboard.svg" />
     <Content Include="Home.aspx" />
+    <Content Include="HomeStu.aspx" />
     <Content Include="icons-reference\fonts\dark-dashboard.svg" />
     <Content Include="icons-reference\icons-reference.html" />
     <Content Include="icons-reference\styles.css" />
@@ -401,6 +402,7 @@
     <Content Include="StudentAdd.aspx" />
     <Content Include="StudentEdit.aspx" />
     <Content Include="StudentFind.aspx" />
+    <Content Include="StudentInfo.aspx" />
     <Content Include="Template.Master" />
     <Content Include="data\addresses.json" />
     <Content Include="data\countries.json" />
@@ -657,6 +659,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HomeStu.aspx.cs">
+      <DependentUpon>HomeStu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeStu.aspx.designer.cs">
+      <DependentUpon>HomeStu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -713,6 +722,13 @@
     </Compile>
     <Compile Include="StudentFind.aspx.designer.cs">
       <DependentUpon>StudentFind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfo.aspx.cs">
+      <DependentUpon>StudentInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentInfo.aspx.designer.cs">
+      <DependentUpon>StudentInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentTemplate.Master.cs">
       <DependentUpon>StudentTemplate.Master</DependentUpon>

@@ -196,14 +196,9 @@
             <!-- Sidebar Navidation Menus-->
             <span class="heading">Main</span>
             <ul class="list-unstyled">
-                <li><a href="index.html"><i class="icon-home"></i>首页</a></li>
+                <li><a href="HomeStu.aspx"><i class="icon-home"></i>首页</a></li>
                 <li><a href="login.html"><i class="icon-windows"></i>新闻列表</a></li>
-                <li><a href="#studentdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-user-circle-o"></i>信息管理 </a>
-                    <ul id="studentdropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">查看信息</a></li>
-                        <li><a href="#">修改信息</a></li>
-                    </ul>
-                </li>
+                <li><a href="StudentInfo.aspx"><i class="fa fa-user-circle-o"></i>个人信息</a></li>
                 <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-graduation-cap" aria-hidden="true"></i>课程管理 </a>
                     <ul id="coursedropdownDropdown" class="collapse list-unstyled ">
                         <li><a href="#">课程列表</a></li>

@@ -43,13 +43,15 @@ namespace StudentManager
             else if (rbtnType.SelectedIndex == 1)
             {
                 DALstudent_info dal = new DALstudent_info();
-                IList<student_infoEntity> user = dal.Getstudent_infosbyCondition(" studentId='" + name + "' and studentPassword='" + pwd + "'");
-                string trueName = user[0].StudentName.ToString();
-                if (user.Count > 0)
+                IList<student_infoEntity> stus = dal.Getstudent_infosbyCondition(" studentId='" + name + "' and studentPassword='" + pwd + "'");
+                string trueName = stus[0].StudentName.ToString();
+                if (stus.Count > 0)
                 {
+                    int id = stus[0].Id;
                     Session["studentID"] = name;
                     Session["StudentName"] = trueName;
-                    Response.Redirect("stuTest.aspx");
+                    Session["id"] = id;
+                    Response.Redirect("HomeStu.aspx");
                 }
                 else
                 {

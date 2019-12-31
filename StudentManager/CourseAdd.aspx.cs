@@ -23,7 +23,7 @@ namespace StudentManager
             string cid = txtCourseId.Text;
             IList<courseEntity> course = dal.GetcoursesbyCondition(" CourseId='" + cid + "'");
             if (course.Count>0)
-                this.Page.RegisterStartupScript("", "<script>alert('该用户名已存在！');</script>");
+                this.Page.RegisterStartupScript("", "<script>alert('该课程已存在！');</script>");
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
