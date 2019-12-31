@@ -77,6 +77,7 @@
     <Content Include="css\style.red.css" />
     <Content Include="css\style.sea.css" />
     <Content Include="css\style.violet.css" />
+    <Content Include="EditAdminPwd.aspx" />
     <Content Include="fonts\dark-dashboard.svg" />
     <Content Include="Home.aspx" />
     <Content Include="icons-reference\fonts\dark-dashboard.svg" />
@@ -418,7 +419,6 @@
     <Content Include="vendor\jquery.cookie\cookie.jquery.json" />
     <Content Include="vendor\popper.js\umd\poppper.js.flow" />
     <Content Include="StudentTemplate.Master" />
-    <Content Include="WebForm1.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -643,6 +643,13 @@
     <Compile Include="CourseSelect.aspx.designer.cs">
       <DependentUpon>CourseSelect.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditAdminPwd.aspx.cs">
+      <DependentUpon>EditAdminPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditAdminPwd.aspx.designer.cs">
+      <DependentUpon>EditAdminPwd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -720,13 +727,6 @@
     </Compile>
     <Compile Include="Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
