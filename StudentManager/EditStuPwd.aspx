@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="EditAdminPwd.aspx.cs" Inherits="StudentManager.EditAdminPwd" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/StudentTemplate.Master" AutoEventWireup="true" CodeBehind="EditStuPwd.aspx.cs" Inherits="StudentManager.EditStuPwd" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+     <div class="container-fluid">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
+            <li class="breadcrumb-item"><a href="HomeStu.aspx">首页</a></li>
             <li class="breadcrumb-item active">修改密码</li>
         </ul>
     </div>

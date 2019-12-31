@@ -206,7 +206,7 @@
                     </ul>
                 </li>
                 <li><a href="login.html"><i class="fa fa-star-half-o" aria-hidden="true"></i>成绩查询</a></li>
-                <li><a href="login.html"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
+                <li><a href="EditStuPwd.aspx"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
                 <li><a href="Login.aspx"><i class="icon-logout"></i>退出登录</a></li>
             </ul>
         </nav>

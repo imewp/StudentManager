@@ -82,6 +82,7 @@
     <Content Include="css\style.sea.css" />
     <Content Include="css\style.violet.css" />
     <Content Include="EditAdminPwd.aspx" />
+    <Content Include="EditStuPwd.aspx" />
     <Content Include="fonts\dark-dashboard.svg" />
     <Content Include="Home.aspx" />
     <Content Include="HomeStu.aspx" />
@@ -937,6 +938,13 @@
     </Compile>
     <Compile Include="EditAdminPwd.aspx.designer.cs">
       <DependentUpon>EditAdminPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditStuPwd.aspx.cs">
+      <DependentUpon>EditStuPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditStuPwd.aspx.designer.cs">
+      <DependentUpon>EditStuPwd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

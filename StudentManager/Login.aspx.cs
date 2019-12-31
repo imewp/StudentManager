@@ -51,6 +51,7 @@ namespace StudentManager
                     Session["studentID"] = name;
                     Session["StudentName"] = trueName;
                     Session["id"] = id;
+                    Session["Pwd"] = pwd;
                     Response.Redirect("HomeStu.aspx");
                 }
                 else
