@@ -10,7 +10,7 @@ using SQLDAL;
 
 namespace StudentManager
 {
-    public partial class NewsShow1 : System.Web.UI.Page
+    public partial class NewsShow : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

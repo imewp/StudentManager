@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
-            <li class="breadcrumb-item active">学生信息查找</li>
+            <li class="breadcrumb-item active">学生信息列表</li>
         </ul>
     </div>
 
@@ -59,8 +59,8 @@
                                                 <asp:BoundField DataField="StudentClass" HeaderText="所在班级" />
                                                 <asp:TemplateField HeaderText="操作">
                                                     <ItemTemplate>
-                                                        <asp:LinkButton ID="lb1" CommandName="edit" runat="server">编辑</asp:LinkButton>||
-                                                        <asp:LinkButton ID="lb2" CommandName="del" runat="server" OnClientClick="javascript:return confirm('确定删除吗?');">删除</asp:LinkButton>||
+                                                        <asp:LinkButton ID="lb1" CommandName="edit" runat="server" ToolTip="修改当前学生的信息">编辑</asp:LinkButton>||
+                                                        <asp:LinkButton ID="lb2" CommandName="del" runat="server" ToolTip="删除当前学生" OnClientClick="javascript:return confirm('确定删除吗?');">删除</asp:LinkButton>||
                                                         <asp:LinkButton ID="lb3" CommandName="reset" runat="server" ToolTip="重置当前学生的密码">重置</asp:LinkButton>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>

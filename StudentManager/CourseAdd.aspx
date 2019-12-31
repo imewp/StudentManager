@@ -3,6 +3,7 @@
     <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
+            <li class="breadcrumb-item"><a href="CourseList.aspx">课程列表</a></li>
             <li class="breadcrumb-item active">添加课程</li>
         </ul>
     </div>
@@ -57,7 +58,7 @@
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">
-                                        <asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnAdd_Click" />
+                                        <asp:Button ID="btnAdd" CssClass="btn btn-primary" runat="server" Text="Save" OnClick="btnAdd_Click" />
                                         <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                     </div>
                                 </div>

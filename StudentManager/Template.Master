@@ -199,33 +199,32 @@
                 <li><a href="Home.aspx"><i class="icon-home"></i>首页</a></li>
                 <li><a href="#studentdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-user-circle-o"></i>学生管理 </a>
                     <ul id="studentdropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="StudentFind.aspx">信息查询</a></li>
+                        <li><a href="StudentFind.aspx">信息列表</a></li>
                         <li><a href="StudentAdd.aspx">信息录入</a></li>
-                        <%--<li><a href="StudentInfo.aspx">信息查看</a></li>--%>
                     </ul>
                 </li>
                 <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-calendar" aria-hidden="true"></i>课程管理 </a>
                     <ul id="coursedropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">课程信息</a></li>
-                        <li><a href="#">开设课程</a></li>
-                        <li><a href="#">成绩录入</a></li>
+                        <li><a href="CourseList.aspx">课程列表</a></li>
+                        <li><a href="CourseAdd.aspx">开设课程</a></li>
+                        <li><a href="CourseScore.aspx">成绩录入</a></li>
                     </ul>
                 </li>
                 <li><a href="#newsdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-newspaper-o" aria-hidden="true"></i>通知管理 </a>
                     <ul id="newsdropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">发布通知</a></li>
                         <li><a href="NewsManage.aspx">管理通知</a></li>
+                        <li><a href="NewsAdd.aspx">发布通知</a></li>
                     </ul>
                 </li>
                  <li><a href="#admindropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-unlock-alt" aria-hidden="true"></i>管理员管理
 
                      </a>
                     <ul id="admindropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="AdminAdd.aspx">添加管理员</a></li>
                         <li><a href="AdminList.aspx">管理员列表</a></li>
+                        <li><a href="AdminAdd.aspx">添加管理员</a></li>
                     </ul>
                 </li>
-                <li><a href="EditPwd.aspx"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
+                <li><a href="EditAdminPwd.aspx"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
                 <li><a href="Login.aspx"><i class="icon-logout"></i>退出登录</a></li>
             </ul>
         </nav>
