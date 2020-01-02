@@ -400,9 +400,9 @@
     <Content Include="Model\end.txt" />
     <Content Include="Model\top.txt" />
     <Content Include="NewsAdd.aspx" />
+    <Content Include="NewsEdit.aspx" />
     <Content Include="NewsList.aspx" />
     <Content Include="NewsManage.aspx" />
-    <Content Include="NewsShow.aspx" />
     <Content Include="NewsShowStu.aspx" />
     <Content Include="StudentAdd.aspx" />
     <Content Include="StudentEdit.aspx" />
@@ -967,6 +967,13 @@
     <Compile Include="NewsAdd.aspx.designer.cs">
       <DependentUpon>NewsAdd.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NewsEdit.aspx.cs">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsEdit.aspx.designer.cs">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NewsList.aspx.cs">
       <DependentUpon>NewsList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -980,13 +987,6 @@
     </Compile>
     <Compile Include="NewsManage.aspx.designer.cs">
       <DependentUpon>NewsManage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsShow.aspx.cs">
-      <DependentUpon>NewsShow.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsShow.aspx.designer.cs">
-      <DependentUpon>NewsShow.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewsShowStu.aspx.cs">
       <DependentUpon>NewsShowStu.aspx</DependentUpon>

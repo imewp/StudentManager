@@ -49,7 +49,7 @@
                                         <ItemTemplate>
                                             <tr class="gradeX">
                                                 <td>
-                                                    <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Id", "~/NewsShow.aspx?id={0}")%>'></asp:HyperLink>
+                                                    <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Id", "~/NewsEdit.aspx?id={0}")%>'></asp:HyperLink>
                                                 </td>
                                                 <td>
                                                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("Author") %>'></asp:Label>
