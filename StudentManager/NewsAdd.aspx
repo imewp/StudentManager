@@ -7,8 +7,7 @@
 
     <div class="container-fluid">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
-            <li class="breadcrumb-item"><a href="NewsManage.aspx">新闻通知列表</a></li>
+            <li class="breadcrumb-item"><a href="NewsManage.aspx">首页</a></li>
             <li class="breadcrumb-item active">新闻通知添加</li>
         </ul>
     </div>

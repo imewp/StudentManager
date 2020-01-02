@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <div class="container-fluid">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="HomeStu.aspx">首页</a></li>
+            <li class="breadcrumb-item"><a href="NewsList.aspx">首页</a></li>
             <li class="breadcrumb-item active">个人信息</li>
         </ul>
     </div>

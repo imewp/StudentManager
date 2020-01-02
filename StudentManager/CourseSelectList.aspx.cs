@@ -26,7 +26,14 @@ namespace StudentManager
         /// </summary>
         public void LoadData()
         {
-            
+            string conditon = string.Empty;
+            conditon += " Id in (select CourseId from student_course where StudentId='" + Session["id"].ToString() + "')";
+            DALcourse dal = new DALcourse();
+            IList<courseEntity> course = dal.GetcoursesbyCondition(conditon);//按照条件来查询数据
+            GridView1.DataSource = course;
+            GridView1.DataBind();
+
+             
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)

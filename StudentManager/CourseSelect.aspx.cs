@@ -31,22 +31,8 @@ namespace StudentManager
             IList<student_courseEntity> scs = dal.Getstudent_coursesbyCondition("StudentId='" + Session["id"].ToString() + "'");
             if (scs.Count > 0)
             {
-                //ClientScript.RegisterStartupScript(GetType(), "", "<script></script>");
-                Button1.Enabled = false;
-                Button2.Enabled = false;
-                Button3.Enabled = false;
-                Button3.ToolTip = "您已经选过课程了，只能查看！";
-                lb2.Items.Clear();//先清空，再绑定已选择的课程
-                DALcourse dalc = new DALcourse();
-                courseEntity c = new courseEntity();
-                foreach (student_courseEntity sc in scs)
-                {
-                    c = dalc.Getcourse(int.Parse(sc.CourseId));//通过选课存储的课程号，到课程表中取出该课程的课程名称等信息
-                    ListItem li = new ListItem(c.CourseName, c.Id.ToString());
-                    lb2.Items.Add(li);
-                }
-                //this.Page.RegisterStartupScript("", "<script>alert(您已选择过课程！);</script>");
-                //Response.Redirect("CourseSelectList.aspx");
+                this.Page.RegisterStartupScript("", "<script>alert(您已选择过课程！);</script>");
+                Response.Redirect("CourseSelectList.aspx");
             }
             else
             {

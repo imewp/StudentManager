@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="HomeStu.aspx">首页</a></li>
+            <li class="breadcrumb-item"><a href="NewsList.aspx">首页</a></li>
             <li class="breadcrumb-item active">选择课程</li>
         </ul>
     </div>
@@ -28,7 +28,7 @@
                                             <td>
                                                 <asp:ListBox ID="lb1" runat="server" Height="400px" Width="200px" OnSelectedIndexChanged="lb1_SelectedIndexChanged" AutoPostBack="True"></asp:ListBox>
                                             </td>
-                                            <td style="padding:20px;">
+                                            <td style="padding: 20px;">
                                                 <asp:Button ID="Button1" runat="server" Text="选定>>" OnClick="Button1_Click" /><br />
                                                 <br />
                                                 <asp:Button ID="Button2" runat="server" Text="退选<<" OnClick="Button2_Click" /><br />
@@ -43,11 +43,11 @@
                                 </div>
                             </div>
                             <div class="block">
-                            <div class="title"><strong>课程详细信息</strong></div>
-                            <div class="block-body">
-                                <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                                <div class="title"><strong>课程详细信息</strong></div>
+                                <div class="block-body">
+                                    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </form>
                 </div>
