@@ -10,6 +10,6 @@
 namespace StudentManager {
     
     
-    public partial class CourseSelect {
+    public partial class CourseFind1 {
     }
 }

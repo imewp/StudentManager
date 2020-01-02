@@ -10,7 +10,7 @@ using SQLDAL;
 
 namespace StudentManager
 {
-    public partial class NewsList : System.Web.UI.Page
+    public partial class CourseListStu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,22 +28,20 @@ namespace StudentManager
         public void LoadData()
         {
             string conditon = string.Empty;
-            conditon = "(Title is not null and Title<>' ')";
-            if (!string.IsNullOrEmpty(newsTitle.Value))
+            conditon = "(CourseId is not null and CourseId<>' ')";
+            if (!string.IsNullOrEmpty(course_id.Value))
             {
-                conditon += " and Title like'%" + newsTitle.Value + "%'";
+                conditon += " and cast(CourseId as char) like'%" + course_id.Value + "%'";
             }
-            DALnew dal = new DALnew();
-            IList<newEntity> news = dal.GetnewsbyCondition(conditon);//按照条件来查询数据
-            Repeater1.DataSource = news;
-            Repeater1.DataBind();
+            DALcourse dal = new DALcourse();
+            IList<courseEntity> course = dal.GetcoursesbyCondition(conditon);//按照条件来查询数据
+            GridView1.DataSource = course;
+            GridView1.DataBind();
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             LoadData();
         }
-
-
     }
 }

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <div class="container-fluid">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="Home.aspx">首页</a></li>
+            <li class="breadcrumb-item"><a href="HomeStu.aspx">首页</a></li>
             <li class="breadcrumb-item active">个人信息</li>
         </ul>
     </div>
@@ -64,7 +64,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">所在班级</label>
                                         <div class="col-sm-9">
-                                            <asp:TextBox ID="txtStuClass" runat="server" placeholder="例：XXX专业XXXX级XX班" CssClass="form-control"></asp:TextBox>
+                                            <asp:TextBox ID="txtStuClass" runat="server" placeholder="例：XXXX级XX班" CssClass="form-control"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="line"></div>
@@ -78,7 +78,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">家庭住址</label>
                                         <div class="col-sm-9">
-                                            <asp:TextBox ID="txtStuAddress" runat="server" placeholder="例：XX省XX市(XX县)XX区XXXX街道XXX单元XXX号" CssClass="form-control"></asp:TextBox>
+                                            <asp:TextBox ID="txtStuAddress" runat="server" placeholder="例：XX省XX市(XX县)" CssClass="form-control"></asp:TextBox>
                                         </div>
                                     </div>
 

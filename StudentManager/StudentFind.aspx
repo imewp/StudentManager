@@ -12,12 +12,12 @@
     <section class="no-padding-top">
         <div class="container-fluid">
             <div class="row">
-                <!-- Inline Form-->
+                <!-- All Form-->
                 <div class="col-lg-12">
-                    <div class="block">
-                        <div class="title"><strong></strong></div>
-                        <div class="block-body">
-                            <form class="form-horizontal" runat="server">
+                    <form class="form-horizontal" runat="server">
+                        <div class="block">
+                            <div class="title"><strong></strong></div>
+                            <div class="block-body">
                                 <div class="form-group row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
@@ -68,21 +68,28 @@
                                         </asp:GridView>
                                     </div>
                                 </div>
-                                <div class="line"></div>
-                                <div class="form-group row">
-                                    <div class="col-sm-9 ml-auto">
-                                        <asp:FileUpload ID="FileUpload1" runat="server" Width="80" />
-                                        <asp:Button ID="btnImport" runat="server" CssClass="btn btn-primary" Text="导入" OnClick="btnImport_Click" />
-                                        <asp:Button ID="btnExport" runat="server" CssClass="btn btn-primary" Text="导出" OnClick="btnExport_Click" />
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
+                        <div class="block">
+                            <div class="title"><strong>批量导入学生信息</strong></div>
+                            <div class="block-body">
+                                <div class="form-group">
+                                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                                    <asp:Button ID="btnImport" runat="server" CssClass="btn btn-primary" Text="导入" OnClick="btnImport_Click" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="title"><strong>批量导出学生信息</strong></div>
+                            <div class="block-body">
+                                <div class="form-group">
+                                    <asp:Button ID="Button2" runat="server" CssClass="btn btn-primary" Text="导出" OnClick="btnExport_Click" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-
-
 </asp:Content>

@@ -46,7 +46,7 @@ namespace StudentManager
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
