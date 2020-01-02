@@ -68,7 +68,6 @@
     <Content Include="CourseAdd.aspx" />
     <Content Include="CourseFind.aspx" />
     <Content Include="CourseListStu.aspx" />
-    <Content Include="StuCourseFind.aspx" />
     <Content Include="CourseList.aspx" />
     <Content Include="CourseScore.aspx" />
     <Content Include="CourseSelect.aspx" />
@@ -920,13 +919,6 @@
     </Compile>
     <Compile Include="CourseListStu.aspx.designer.cs">
       <DependentUpon>CourseListStu.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StuCourseFind.aspx.cs">
-      <DependentUpon>StuCourseFind.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StuCourseFind.aspx.designer.cs">
-      <DependentUpon>StuCourseFind.aspx</DependentUpon>
     </Compile>
     <Compile Include="CourseList.aspx.cs">
       <DependentUpon>CourseList.aspx</DependentUpon>
