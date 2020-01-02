@@ -10,7 +10,6 @@
     <section class="no-padding-top">
         <div class="container-fluid">
             <div class="row">
-                <!-- Inline Form-->
                 <div class="col-lg-12">
                     <div class="block">
                         <div class="title"><strong></strong></div>

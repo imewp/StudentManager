@@ -16,8 +16,7 @@ namespace StudentManager
         {
             if (!IsPostBack)//页面首次加载自动执行
             {
-                //if (Session["adminID"] == null)
-                //    Response.Redirect("Login.aspx");
+                int id = int.Parse(Session["id"].ToString());
                 LoadData();
             }
         }
@@ -27,16 +26,7 @@ namespace StudentManager
         /// </summary>
         public void LoadData()
         {
-            string conditon = string.Empty;
-            conditon = "(CourseId is not null and CourseId<>' ')";
-            if (!string.IsNullOrEmpty(course_id.Value))
-            {
-                conditon += " and cast(CourseId as char) like'%" + course_id.Value + "%'";
-            }
-            DALcourse dal = new DALcourse();
-            IList<courseEntity> course = dal.GetcoursesbyCondition(conditon);//按照条件来查询数据
-            GridView1.DataSource = course;
-            GridView1.DataBind();
+            
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)

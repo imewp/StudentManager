@@ -199,12 +199,13 @@
                 <li><a href="HomeStu.aspx"><i class="icon-home"></i>首页</a></li>
                 <li><a href="NewsList.aspx"><i class="icon-windows"></i>新闻列表</a></li>
                 <li><a href="StudentInfo.aspx"><i class="fa fa-user-circle-o"></i>个人信息</a></li>
-                <li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-graduation-cap" aria-hidden="true"></i>课程管理 </a>
+                <%--<li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-graduation-cap" aria-hidden="true"></i>课程管理 </a>
                     <ul id="coursedropdownDropdown" class="collapse list-unstyled ">
                         <li><a href="CourseListStu.aspx">课程列表</a></li>
                         <li><a href="CourseSelect.aspx">选择课程</a></li>
                     </ul>
-                </li>
+                </li>--%>
+                <li><a href="CourseSelect.aspx"><i class="fa fa-star-half-o" aria-hidden="true"></i>选择课程</a></li>
                 <li><a href="CourseFind.aspx"><i class="fa fa-star-half-o" aria-hidden="true"></i>成绩查询</a></li>
                 <li><a href="EditStuPwd.aspx"><i class="fa fa-key" aria-hidden="true"></i>修改密码</a></li>
                 <li><a href="Login.aspx"><i class="icon-logout"></i>退出登录</a></li>
