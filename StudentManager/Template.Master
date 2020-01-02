@@ -194,7 +194,7 @@
                 </div>
             </div>
             <!-- Sidebar Navidation Menus-->
-            <span class="heading">Main</span>
+            <span class="heading">管理员</span>
             <ul class="list-unstyled">
                 <li><a href="Home.aspx"><i class="icon-home"></i>首页</a></li>
                 <li><a href="#studentdropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-user-circle-o"></i>学生管理 </a>

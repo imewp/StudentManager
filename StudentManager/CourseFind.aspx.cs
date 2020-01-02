@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace StudentManager
 {
-    public partial class CourseFind : System.Web.UI.Page
+    public partial class CourseFind1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
