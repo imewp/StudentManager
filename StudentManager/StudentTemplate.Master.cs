@@ -11,7 +11,8 @@ namespace StudentManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //lblName.Text = Session["studentName"].ToString();
+            lblName.Text = Session["studentName"].ToString();
+            Image1.ImageUrl = "./img/studentphone/" + Session["phone"].ToString();
         }
     }
 }

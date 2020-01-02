@@ -48,10 +48,12 @@ namespace StudentManager
                 if (stus.Count > 0)
                 {
                     int id = stus[0].Id;
+                    string phone = stus[0].StudentPhoto;
                     Session["studentID"] = name;
                     Session["StudentName"] = trueName;
                     Session["id"] = id;
                     Session["Pwd"] = pwd;
+                    Session["phone"] = phone;
                     Response.Redirect("HomeStu.aspx");
                 }
                 else

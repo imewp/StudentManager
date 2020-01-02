@@ -18,5 +18,6 @@ namespace StudentManager
             //else
             //    lblType.Text = "管理员";
         }
+
     }
 }

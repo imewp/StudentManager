@@ -71,6 +71,7 @@ namespace StudentManager
             {
                 this.Page.RegisterStartupScript("", "<script>alert('学生信息修改成功！')</script>");
                 Response.Redirect("StudentFind.aspx");
+                
             }
             else
                 this.Page.RegisterStartupScript("", "<script>alert('学生信息修改失败！');</script>");
