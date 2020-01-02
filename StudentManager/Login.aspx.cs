@@ -33,7 +33,7 @@ namespace StudentManager
                     Session["TrueName"] = trueName;
                     Session["Pwd"] = pwd;
                     Session["id"] = id;
-                    Response.Redirect("Home.aspx");
+                    Response.Redirect("NewsManage.aspx");
                 }
                 else
                 {

@@ -85,7 +85,6 @@
     <Content Include="EditAdminPwd.aspx" />
     <Content Include="EditStuPwd.aspx" />
     <Content Include="fonts\dark-dashboard.svg" />
-    <Content Include="Home.aspx" />
     <Content Include="icons-reference\fonts\dark-dashboard.svg" />
     <Content Include="icons-reference\icons-reference.html" />
     <Content Include="icons-reference\styles.css" />
@@ -953,13 +952,6 @@
     </Compile>
     <Compile Include="EditStuPwd.aspx.designer.cs">
       <DependentUpon>EditStuPwd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
