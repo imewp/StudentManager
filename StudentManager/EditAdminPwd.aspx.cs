@@ -31,7 +31,7 @@ namespace StudentManager
                     if (dal.Modadmin_user(admin) > 0)
                     {
                         this.Page.RegisterStartupScript("", "<script>alert('密码修改成功！')</script>");
-                        Response.Redirect("Home.aspx");
+                        Response.Redirect("NewsManage.aspx");
                     }
                     else
                         this.Page.RegisterStartupScript("", "<script>alert('密码修改失败！');</script>");

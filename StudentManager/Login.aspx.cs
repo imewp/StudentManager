@@ -24,11 +24,17 @@ namespace StudentManager
             if (rbtnType.SelectedIndex == 0)
             {
                 DALadmin_user dal = new DALadmin_user();
-                IList<admin_userEntity> admin = dal.Getadmin_usersbyCondition(" userName='" + name + "' and userPassword='" + pwd + "'");
-                if (admin.Count > 0)
+                IList<admin_userEntity> admins = dal.Getadmin_usersbyCondition(" userName='" + name + "' and userPassword='" + pwd + "'");
+                if (admins.Count > 0)
                 {
-                    string trueName = admin[0].TrueName.ToString();
-                    int id = admin[0].Id;
+                    string trueName = admins[0].TrueName.ToString();
+                    int id = admins[0].Id;
+
+                    //修改登录次数
+                    admin_userEntity admin = dal.Getadmin_user(id);
+                    admin.LoginTimes++;     
+                    dal.Modadmin_user(admin);
+
                     Session["adminID"] = name;
                     Session["TrueName"] = trueName;
                     Session["Pwd"] = pwd;
@@ -47,13 +53,14 @@ namespace StudentManager
                 if (stus.Count > 0)
                 {
                     int id = stus[0].Id;
+                  
                     string phone = stus[0].StudentPhoto;
                     string trueName = stus[0].StudentName.ToString();
                     Session["studentID"] = name;
                     Session["StudentName"] = trueName;
                     Session["id"] = id;
                     Session["Pwd"] = pwd;
-                    Session["phone"] = phone;
+                    //Session["phone"] = phone;
                     Response.Redirect("NewsList.aspx");
                 }
                 else

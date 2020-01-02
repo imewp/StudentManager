@@ -25,7 +25,7 @@ namespace StudentManager
             student_infoEntity stu = dal.Getstudent_info(id);
             if (pwd == txtjPwd.Text.Trim())
             {
-                if (txtxPwd.Text.Trim() == txtrPwd.Text.Trim())
+                if (txtxPwd.Text.Trim() == txtrPwd.Text.Trim() && txtxPwd.Text.Trim() != "")
                 {
                     stu.StudentPassword = txtxPwd.Text.Trim();
                     if (dal.Modstudent_info(stu) > 0)

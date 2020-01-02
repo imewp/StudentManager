@@ -92,7 +92,7 @@ namespace StudentManager
                 {
                     try
                     {
-                        fileName = lblStuID.Text.Trim() + fileExt;  //取学号构成上传后的文件名
+                        fileName = DateTime.Now.ToString("yyyymmddhhmmss").ToString() + fileExt;  //取学号构成上传后的文件名
                         fUpload.SaveAs(Server.MapPath("./img/studentphone/") + fileName);  //保存上传文件到指定路径\
                     }
                     catch (Exception ex)
