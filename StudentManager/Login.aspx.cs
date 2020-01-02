@@ -54,7 +54,7 @@ namespace StudentManager
                     Session["id"] = id;
                     Session["Pwd"] = pwd;
                     Session["phone"] = phone;
-                    Response.Redirect("HomeStu.aspx");
+                    Response.Redirect("NewsList.aspx");
                 }
                 else
                 {

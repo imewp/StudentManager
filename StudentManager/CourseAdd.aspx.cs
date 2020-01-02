@@ -15,7 +15,8 @@ namespace StudentManager
         DALcourse dal = new DALcourse();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["adminID"] == null)
+                Response.Redirect("Login.aspx");
         }
 
         protected void txtCourseId_TextChanged(object sender, EventArgs e)

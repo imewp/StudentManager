@@ -21,8 +21,8 @@ namespace StudentManager
         {
             DALnew dal = new DALnew();
             newEntity news = new newEntity();
-            //news.Author = Session["adminID"].ToString();
-            news.Author = "admin";
+            news.Author = Session["adminID"].ToString();
+            //news.Author = "admin";
             news.Content = content.Value;
             news.ReleaseTime = DateTime.Parse(txtReleaseTime.Text);
             news.Title = txtTitle.Text;
@@ -41,6 +41,7 @@ namespace StudentManager
             }
             dal.Addnews(news);
             this.Page.RegisterClientScriptBlock("", "<script>新闻发布成功！</script>");
+            Response.Redirect("NewsManage.aspx");
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)

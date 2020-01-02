@@ -219,7 +219,7 @@
                  <li><a href="#admindropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-unlock-alt" aria-hidden="true"></i>管理员管理
 
                      </a>
-                    <ul id="admindropdownDropdown" class="collapse list-unstyled ">
+                    <ul id="admindropdownDropdown" runat="server" class="collapse list-unstyled ">
                         <li><a href="AdminList.aspx">管理员列表</a></li>
                         <li><a href="AdminAdd.aspx">添加管理员</a></li>
                     </ul>

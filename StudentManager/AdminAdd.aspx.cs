@@ -15,8 +15,8 @@ namespace StudentManager
         DALadmin_user dal = new DALadmin_user();//操作对象
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["adminID"] == null)
-            //    Response.Redirect("Login.aspx");
+            if (Session["adminID"] == null)
+                Response.Redirect("Login.aspx");
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)

@@ -89,7 +89,7 @@
                                 <div class="form-group row" style="margin-right: 50px;height:500px;">
                                     <label class="col-sm-3 form-control-label"></label>
                                     <div class="col-sm-9" style="float: right;">
-                                        <asp:Image ID="Image1" runat="server" Width="100" Height="150" />
+                                        <asp:Image ID="Image1" runat="server" Width="140" Height="160" />
                                         <asp:FileUpload ID="fulStuPhoto" runat="server" />
                                     </div>
                                 </div>
@@ -102,7 +102,6 @@
                                     </div>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>

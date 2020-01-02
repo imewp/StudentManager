@@ -199,7 +199,7 @@
             <!-- Sidebar Navidation Menus-->
             <span class="heading">学生</span>
             <ul class="list-unstyled">
-                <li><a href="HomeStu.aspx"><i class="icon-home"></i>首页</a></li>
+                <%--<li><a href="HomeStu.aspx"><i class="icon-home"></i>首页</a></li>--%>
                 <li><a href="NewsList.aspx"><i class="icon-windows"></i>新闻列表</a></li>
                 <li><a href="StudentInfo.aspx"><i class="fa fa-user-circle-o"></i>个人信息</a></li>
                 <%--<li><a href="#coursedropdownDropdown" aria-expanded="false" data-toggle="collapse"><i class="fa fa-graduation-cap" aria-hidden="true"></i>课程管理 </a>
