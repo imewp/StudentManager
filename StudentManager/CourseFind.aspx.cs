@@ -11,7 +11,8 @@ namespace StudentManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["studentID"] == null)
+                Response.Redirect("Login.aspx");
         }
     }
 }

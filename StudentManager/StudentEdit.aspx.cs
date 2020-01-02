@@ -23,6 +23,10 @@ namespace StudentManager
                     int id = int.Parse(Request.QueryString["id"].ToString());
                     GetData(id);//获取数据
                 }
+                else
+                {
+                    Response.Redirect("Login.aspx");
+                }
             }
         }
         /// <summary>

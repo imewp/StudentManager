@@ -13,7 +13,8 @@ namespace StudentManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["studentID"] == null)
+                Response.Redirect("Login.aspx");
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace StudentManager
                     if (dal.Modstudent_info(stu) > 0)
                     {
                         this.Page.RegisterStartupScript("", "<script>alert('密码修改成功！')</script>");
-                        Response.Redirect("HomeStu.aspx");
+                        Response.Redirect("NewsList.aspx");
                     }
                     else
                         this.Page.RegisterStartupScript("", "<script>alert('密码修改失败！');</script>");

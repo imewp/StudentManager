@@ -16,7 +16,8 @@ namespace StudentManager
         DALstudent_info dal = new DALstudent_info();//操作对象
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["adminID"] == null)
+                Response.Redirect("Login.aspx");
         }
         public string imgUpLoad(FileUpload fUpload)
         {

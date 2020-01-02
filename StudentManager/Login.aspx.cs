@@ -44,11 +44,11 @@ namespace StudentManager
             {
                 DALstudent_info dal = new DALstudent_info();
                 IList<student_infoEntity> stus = dal.Getstudent_infosbyCondition(" studentId='" + name + "' and studentPassword='" + pwd + "'");
-                string trueName = stus[0].StudentName.ToString();
                 if (stus.Count > 0)
                 {
                     int id = stus[0].Id;
                     string phone = stus[0].StudentPhoto;
+                    string trueName = stus[0].StudentName.ToString();
                     Session["studentID"] = name;
                     Session["StudentName"] = trueName;
                     Session["id"] = id;
