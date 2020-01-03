@@ -14,18 +14,22 @@
                 <!-- Inline Form-->
                 <div class="col-lg-12">
                     <div class="block">
-                        <div class="title"><strong></strong></div>
+                        <div class="title"><strong>成绩查询</strong></div>
                         <div class="block-body">
                             <form class="form-horizontal" runat="server">
-                                <div class="form-group row">
-                                    <asp:DropDownList ID="DropDownList1" Style="margin-left: 20px; background-color: #fff; color: #212529;" 
-                                        runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" 
-                                        Font-Size="Large">
-                                    </asp:DropDownList>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row" style="margin-left:20px; font-size:1em;">
-                                    <asp:Label ID="Label1" runat="server" style="font-size:1.1em;"></asp:Label>
+                                <div class="table-responsive">
+                                    <asp:GridView ID="GridView1" runat="server" DataKeyNames="Id" CssClass="table table-striped table-hover" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound">
+                                        <Columns>
+                                            <asp:BoundField HeaderText="课程" DataField="CourseId">
+                                                <ItemStyle Width="150px" Font-Size="1.1em" Height="30px" />
+                                                <HeaderStyle Font-Size="1.2em"/>
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="CourseScore" HeaderText="成绩">
+                                                <ItemStyle Width="150px" Font-Size="1.1em"/>
+                                                <HeaderStyle Font-Size="1.2em" />
+                                            </asp:BoundField>
+                                        </Columns>
+                                    </asp:GridView>
                                 </div>
                             </form>
                         </div>

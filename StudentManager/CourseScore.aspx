@@ -26,20 +26,20 @@
                                 <div class="line"></div>
                                 <div class="form-group row">
                                     <div class="table-responsive" style="margin:20px;">
-                                        <asp:GridView ID="GridView1" runat="server" DataKeyNames="Id" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound">
+                                        <asp:GridView ID="GridView1" runat="server" DataKeyNames="Id" CssClass="table table-striped table-hover" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound">
                                             <Columns>
                                                 <asp:BoundField HeaderText="姓名" DataField="StudentId">
-                                                    <ItemStyle Width="150px" Font-Size="1.0em" HorizontalAlign="Center" />
+                                                    <ItemStyle Width="150px" Font-Size="1.0em"/>
                                                     <HeaderStyle Font-Size="1.2em" />
                                                 </asp:BoundField>
                                                 <asp:BoundField HeaderText="课程" DataField="CourseId">
-                                                    <ItemStyle Width="150px" Font-Size="1.0em" HorizontalAlign="Center" />
+                                                    <ItemStyle Width="150px" Font-Size="1.0em"/>
                                                     <HeaderStyle Font-Size="1.2em"/>
                                                 </asp:BoundField>
                                                 <asp:TemplateField HeaderText="成绩">
                                                     <HeaderStyle Font-Size="1.2em" Width="150px" />
                                                     <ItemTemplate>
-                                                        <asp:TextBox ID="score" CssClass="form-control" Text='<%#Bind("CourseScore") %>' runat="server" Font-Size="1.0em" HorizontalAlign="Center"></asp:TextBox>
+                                                        <asp:TextBox ID="score" CssClass="form-control" Text='<%#Bind("CourseScore") %>' runat="server" Font-Size="1.0em"></asp:TextBox>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>

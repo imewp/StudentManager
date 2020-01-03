@@ -11,7 +11,6 @@
     <section class="no-padding-top">
         <div class="container-fluid">
             <div class="row">
-                <!-- Form Elements -->
                 <div class="col-lg-12">
                     <div class="block">
                         <div class="title"><strong></strong></div>
