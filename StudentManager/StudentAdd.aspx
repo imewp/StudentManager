@@ -90,8 +90,22 @@
                                 <div class="form-group row" style="margin-right: 50px;height:500px;">
                                     <label class="col-sm-3 form-control-label"></label>
                                     <div class="col-sm-9" style="float: right;">
-                                        <asp:Image ID="Image1" runat="server" Width="140" Height="160" />
-                                        <asp:FileUpload ID="fulStuPhoto" runat="server" />
+                                         <asp:Image ID="Image1" runat="server" Width="140" Height="160" />
+                                        <asp:FileUpload ID="fulStuPhoto" runat="server" onchange="show(this)" />
+                                        <script>
+                                            function show(file) {
+                                                var reader = new FileReader();	// 实例化一个FileReader对象，用于读取文件
+                                                var img = document.getElementById('ContentPlaceHolder1_Image1'); 	// 获取要显示图片的标签
+
+                                                //读取File对象的数据
+                                                reader.onload = function (evt) {
+                                                    //img.width = "80";
+                                                    //img.height = "80";
+                                                    img.src = evt.target.result;
+                                                }
+                                                reader.readAsDataURL(file.files[0]);
+                                            }
+		                                </script>
                                     </div>
                                 </div>
 

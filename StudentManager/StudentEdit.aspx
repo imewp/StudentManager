@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="StudentEdit.aspx.cs" Inherits="StudentManager.StudentEdit" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <div class="container-fluid">
+    <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="NewsManage.aspx">首页</a></li>
             <li class="breadcrumb-item"><a href="StudentFind.aspx">学生信息列表</a></li>
@@ -27,14 +28,14 @@
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">学生姓名</label>
                                         <div class="col-sm-9">
-                                            <asp:TextBox ID="txtStuName" runat="server" placeholder="姓名不得长于10个字" CssClass="form-control" ></asp:TextBox>
+                                            <asp:TextBox ID="txtStuName" runat="server" placeholder="姓名不得长于10个字" CssClass="form-control"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="line"></div>
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">民族</label>
                                         <div class="col-sm-9">
-                                            <asp:TextBox ID="txtStuNation" runat="server" placeholder="例：汉族" CssClass="form-control" ></asp:TextBox>
+                                            <asp:TextBox ID="txtStuNation" runat="server" placeholder="例：汉族" CssClass="form-control"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="line"></div>
@@ -43,7 +44,7 @@
                                         <div class="col-sm-9">
                                             <input id="rdlSexMale" runat="server" type="radio" value="男" name="a" class="radio-template" />
                                             <label for="rdlSexMale" style="margin-right: 50px;">男</label>
-                                            <input id="rdlSexFemale" runat="server" type="radio"  value="女" name="a" class="radio-template" />
+                                            <input id="rdlSexFemale" runat="server" type="radio" value="女" name="a" class="radio-template" />
                                             <label for="rdlSexFemale">女</label>
                                         </div>
                                     </div>
@@ -89,15 +90,29 @@
                                     <label class="col-sm-3 form-control-label"></label>
                                     <div class="col-sm-9" style="float: right;">
                                         <asp:Image ID="Image1" runat="server" Width="140" Height="160" />
-                                        <asp:FileUpload ID="fulStuPhoto" runat="server"/>
+                                        <asp:FileUpload ID="fulStuPhoto" runat="server" onchange="show(this)" />
+                                        <script>
+                                            function show(file) {
+                                                var reader = new FileReader();	// 实例化一个FileReader对象，用于读取文件
+                                                var img = document.getElementById('ContentPlaceHolder1_Image1'); 	// 获取要显示图片的标签
+
+                                                //读取File对象的数据
+                                                reader.onload = function (evt) {
+                                                    //img.width = "80";
+                                                    //img.height = "80";
+                                                    img.src = evt.target.result;
+                                                }
+                                                reader.readAsDataURL(file.files[0]);
+                                            }
+		                                </script>
                                     </div>
                                 </div>
 
                                 <div class="line"></div>
-                               <div class="form-group row">
+                                <div class="form-group row">
                                     <div class="col-sm-9 ml-auto">
-                                        <asp:Button ID="btnEdit" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnEdit_Click"/>
-                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel"/>
+                                        <asp:Button ID="btnEdit" CssClass="btn btn-primary" runat="server" Text="Save changes" OnClick="btnEdit_Click" />
+                                        <asp:Button ID="btnCancel" CssClass="btn btn-secondary" runat="server" Text="Cancel" />
                                     </div>
                                 </div>
                             </form>
