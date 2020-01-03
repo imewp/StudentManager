@@ -25,7 +25,7 @@ namespace StudentManager
             admin_userEntity admin = dal.Getadmin_user(id);
             if (pwd == txtjPwd.Text.Trim())
             {
-                if (txtxPwd.Text.Trim() == txtrPwd.Text.Trim())
+                if (txtxPwd.Text.Trim() == txtrPwd.Text.Trim() && txtxPwd.Text.Trim() != "" && txtrPwd.Text.Trim() != "")
                 {
                     admin.UserPassword = txtxPwd.Text.Trim();
                     if (dal.Modadmin_user(admin) > 0)
