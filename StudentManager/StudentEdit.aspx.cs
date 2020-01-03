@@ -60,7 +60,8 @@ namespace StudentManager
             DALstudent_info dal = new DALstudent_info();//操作对象
             student_infoEntity stu = (student_infoEntity)ViewState["stu"];//获取缓存数据
             stu.StudentName = txtStuName.Text;
-            stu.StudentPhoto = imgUpLoad(fulStuPhoto);
+            if (fulStuPhoto.HasFile)
+                stu.StudentPhoto = imgUpLoad(fulStuPhoto);
             if (rdlSexMale.Checked)
                 stu.StudentSex = "男";
             if (rdlSexFemale.Checked)

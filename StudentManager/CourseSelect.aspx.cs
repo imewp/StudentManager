@@ -101,7 +101,8 @@ namespace StudentManager
                     sc.StudentId = Session["id"].ToString();
                     dal.Addstudent_course(sc);
                 }
-                ClientScript.RegisterStartupScript(GetType(), "", "<script>alert(选择课程完毕！);location.href='CourseSelectList.aspx'</script>");
+                this.Page.RegisterStartupScript("", "<script>alert(选择课程完毕！);</script>");
+                Response.Redirect("CourseSelectList.aspx");
             }
         }
     }

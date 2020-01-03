@@ -39,7 +39,7 @@
                                                 <asp:TemplateField HeaderText="成绩">
                                                     <HeaderStyle Font-Size="1.2em" Width="150px" />
                                                     <ItemTemplate>
-                                                        <asp:TextBox ID="score" CssClass="form-control" runat="server" Font-Size="1.0em" HorizontalAlign="Center"></asp:TextBox>
+                                                        <asp:TextBox ID="score" CssClass="form-control" Text='<%#Bind("CourseScore") %>' runat="server" Font-Size="1.0em" HorizontalAlign="Center"></asp:TextBox>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>
