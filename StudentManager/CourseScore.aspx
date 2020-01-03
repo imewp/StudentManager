@@ -17,7 +17,10 @@
                         <div class="block-body">
                             <form class="form-horizontal" runat="server">
                                 <div class="form-group row">
-                                    <asp:DropDownList ID="DropDownList1" style="margin-left:20px; background-color: #fff; color: #212529;" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Font-Size="Large" Width="150px"></asp:DropDownList>
+                                    <asp:DropDownList ID="DropDownList1" style="margin-left:20px; background-color: #fff; color: #212529;" 
+                                        runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" 
+                                        Font-Size="Large" Width="150px">
+                                    </asp:DropDownList>
                                 </div>
 
                                 <div class="line"></div>
@@ -46,7 +49,6 @@
                                 <div class="form-group row">
                                     <div class="line"></div>
                                     <div class="input-group-prepend">
-
                                         <asp:Button ID="Button1" runat="server" style="margin-left:20px;" CssClass="btn btn-primary" Text="提交成绩" OnClick="Button1_Click" />
                                     </div>
                                 </div>

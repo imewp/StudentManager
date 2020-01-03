@@ -42,11 +42,12 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="block">
-                                <div class="title"><strong>课程详细信息</strong></div>
-                                <div class="block-body">
-                                    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-                                </div>
+
+                        </div>
+                        <div class="block">
+                            <div class="title"><strong>课程详细信息</strong></div>
+                            <div class="block-body">
+                                <asp:Literal ID="Literal1" runat="server"></asp:Literal>
                             </div>
                         </div>
                     </form>
